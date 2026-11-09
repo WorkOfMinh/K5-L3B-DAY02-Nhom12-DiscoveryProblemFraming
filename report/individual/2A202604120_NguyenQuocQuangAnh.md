@@ -503,3 +503,111 @@ flowchart TD
 | Việc đề xuất AI sớm có thể che khuất giải pháp đơn giản hơn. | Có | Nêu phương án **No AI** cho cả ba, chỉ để AI ở dạng giả thuyết và chưa chọn Agent. |
 
 **Đánh giá sau phản biện:** Các card đã tách rõ nhu cầu, quy trình, bottleneck, tác động, thước đo và giải pháp không dùng AI. Điều chỉnh đáng kể nhất là chuyển **bước đối chiếu yêu cầu** thành bottleneck giả định của P1, thay vì gọi chung việc “đọc GitHub” là bước chậm; đồng thời bổ sung ràng buộc chất lượng cho P4.
+
+## 4. Tôi đã tham gia phần nào (CP3 → CP7)
+
+Sau khi nhóm tổng hợp các Problem Card ở CP3, bài toán chung được ưu tiên là **đối chiếu yêu cầu và tiêu chí bài lab từ nhiều file trong repository GitHub**. Trong nhóm, phần việc tôi được phân công là **CP4 – Kiểm chứng vấn đề và nghiên cứu giải pháp hiện có**. Tôi không phụ trách chính việc lập bảng Pitch, OST ở CP3; xây dựng quy trình và Problem Statement ở CP5; hoặc lựa chọn mức can thiệp AI ở CP6. Phạm vi đóng góp được mô tả dưới đây dựa trên những nội dung CP4 hiện có trong báo cáo nhóm.
+
+| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
+|---|---|---|
+| Pitch Problem Card | Báo cáo cá nhân ở mục 3 có ba card: tổng hợp yêu cầu lab trên GitHub, chuẩn bị dữ liệu/môi trường Colab, chuyển PDF scan sang Word. Các card này là đầu vào cho quá trình hội tụ vấn đề của nhóm; tôi không nhận phần tổng hợp bảng Pitch là công việc mình phụ trách. | Nhóm có thêm candidate về việc tổng hợp và đối chiếu yêu cầu từ nhiều nguồn; xem `report/team/group_report.md` mục 2.1. |
+| Chọn candidate problem | Tôi theo bài toán chung được trình bày trong CP3 để xây dựng nội dung kiểm chứng CP4, không ghi mình là người đơn phương quyết định. | CP4 tập trung vào sinh viên đọc và đối chiếu yêu cầu bài lab từ các file GitHub. |
+| Kiểm chứng / research | **Phần phụ trách CP4:** xây dựng Assumption Map sáu giả định; rà soát các file hướng dẫn lab; chuẩn bị bộ câu hỏi phỏng vấn và mẫu Interview Snapshot; nghiên cứu GitHub Code Search, VS Code Search và GitHub Copilot Chat. | Báo cáo nhóm mục 3.1–3.3 gồm bảng giả định, kế hoạch kiểm chứng, bằng chứng tài liệu và so sánh ba giải pháp hiện có. |
+| Mức can thiệp AI | Không phụ trách CP6. Trong CP4 tôi chỉ so sánh công cụ hiện có với cách tìm kiếm/checklist không dùng AI. | Nhóm có cơ sở đánh giá No AI/Rule trước khi quyết định Workflow hay Agent. |
+
+### Phần tôi tập trung khi làm CP4
+
+| Nội dung CP4 | Tôi tập trung làm rõ điều gì? | Bằng chứng trong báo cáo nhóm |
+|---|---|---|
+| Assumption Map | Phân loại sáu giả định về giá trị, khả năng sử dụng, khả thi và tính bền vững; xác định giả định nào cần kiểm chứng trước. | Mục 3.1 – bảng sáu giả định và độ ưu tiên. |
+| Desk review | Đối chiếu `README.md`, `CHECKPOINTS.md`, `RUBRIC.md`, `SUBMISSION.md` để xác định những thông tin nằm ở các tài liệu khác nhau. | Mục 3.2 – bảng kiểm tra cấu trúc và nguồn tài liệu. |
+| Kế hoạch kiểm chứng | Chuẩn bị câu hỏi hỏi về **lần làm lab gần nhất**, quy trình hiện tại, thời gian, việc bỏ sót và công cụ đang sử dụng; chuẩn bị mẫu Interview Snapshot. | Mục 3.2 – bộ câu hỏi và mẫu snapshot. |
+| Giới hạn bằng chứng | Không dùng thời gian ước lượng trong CP2 như kết quả phỏng vấn; không suy diễn rằng tài liệu nằm ở nhiều file tức là sinh viên chắc chắn gặp khó khăn. | Mục 3.2 – bảng tổng hợp bằng chứng và ghi chú thiếu dữ liệu người dùng ngoài nhóm. |
+| Nghiên cứu giải pháp | So sánh GitHub Code Search, VS Code Search, GitHub Copilot Chat; xác định khâu công cụ hỗ trợ và khâu người học vẫn phải tự đối chiếu. | Mục 3.3 – bảng research, đường dẫn tài liệu và giới hạn giải pháp. |
+
+## 5. Dùng AI
+
+| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+|---|---|---|---|---|
+| CP1 Scan | Hỗ trợ diễn đạt các vấn đề theo Job Story và phân biệt vấn đề với giải pháp. | Gợi ý mô tả rõ actor, tình huống, mục tiêu và tác động có thể quan sát. | AI không biết số lần hoặc thời gian thực tế xảy ra vấn đề của cá nhân. | Giữ các mốc phút ở trạng thái **ước lượng**, không ghi là bằng chứng đã đo. |
+| CP2 Problem Card | Rà soát ba Problem Card; đề xuất tách bước, làm rõ bottleneck, metric và phương án không AI. | Nhận ra cần tách tìm file với đối chiếu tiêu chí; phải đo cả chất lượng bên cạnh thời gian. | AI có thể kết luận quá sớm về bottleneck hoặc gợi ý dùng Agent khi chưa có dữ liệu. | Chỉ ghi bottleneck là giả thuyết; bổ sung checklist/Rule như phương án đối chứng. |
+| CP4 Research | Hỗ trợ sắp xếp Assumption Map, xây dựng câu hỏi phỏng vấn và hệ thống tiêu chí so sánh ba công cụ. | Giúp định nghĩa rõ điều gì có thể đọc từ tài liệu và điều gì bắt buộc hỏi người dùng. | Không thể giả lập phản hồi phỏng vấn thật; đánh giá tính năng công cụ không đồng nghĩa với đo được hiệu quả thực tế. | Chỉ ghi nhận nghiên cứu tài liệu và kế hoạch kiểm chứng; đối chiếu nguồn chính thức và không tự tạo dữ liệu người tham gia. |
+| CP5 Quy trình | Không phụ trách CP5 và không nhận là phần việc sử dụng AI của mình. | — | — | Để thành viên phụ trách ghi lại cách họ dùng AI. |
+| CP5–6 Problem Statement | Không phụ trách viết Problem Statement v0/v1. | — | — | Không nhận đóng góp của thành viên khác. |
+| CP6 Mức can thiệp / quyết định | Không phụ trách lựa chọn AI hoặc quyết định Go / Not Yet / No-Go. | — | — | CP4 chỉ cung cấp dữ kiện và giới hạn kiểm chứng để nhóm tham khảo. |
+
+
+## 6. Reflection (CP7)
+
+### 6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?
+
+Qua việc tìm hiểu các Problem Card của các thành viên trong nhóm, tôi nhận ra rằng mỗi người có cách nhìn nhận và xác định vấn đề khác nhau. Có những vấn đề liên quan đến quản lý thời gian, theo dõi deadline, kiểm tra bài nộp và tổng hợp thông tin từ nhiều nguồn.
+
+Tôi hiểu rằng một vấn đề đáng giải quyết không nhất thiết phải phức tạp mà quan trọng là xác định đúng người gặp khó khăn, nguyên nhân và tác động thực tế. Việc so sánh các vấn đề giúp tôi học được cách đánh giá tính khả thi, mức độ ảnh hưởng và khả năng kiểm chứng trước khi lựa chọn bài toán chung.
+
+### 6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?
+
+Trong quá trình phân tích bài toán tổng hợp yêu cầu bài Lab từ nhiều nguồn, tôi nhận thấy rất dễ nghĩ ngay đến việc sử dụng AI hoặc chatbot để giải quyết. Tuy nhiên, việc lựa chọn công nghệ quá sớm có thể khiến nhóm bỏ qua nguyên nhân thực sự của vấn đề.
+
+Vì vậy, hướng phân tích phù hợp là tập trung vào quy trình hiện tại, xác định bước gây khó khăn và xem xét các phương án đơn giản như checklist hoặc công cụ tìm kiếm trước. Điều này giúp tách biệt việc xác định vấn đề với việc lựa chọn giải pháp.
+
+### 6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.
+
+Một điểm khiến tôi cần xem xét lại là giả định sinh viên mất nhiều thời gian chủ yếu vì phải đọc nhiều file hướng dẫn trên GitHub.
+
+Khi phân tích sâu hơn, tôi nhận thấy việc đọc nhiều file chưa chắc là bottleneck chính; khó khăn cũng có thể nằm ở bước đối chiếu yêu cầu giữa README, tài liệu hướng dẫn và tiêu chí chấm điểm.
+
+Vì vậy, thay vì mặc định bước đọc tài liệu là nguyên nhân, tôi chuyển sang xem xét riêng từng bước trong quy trình và xác định những thông tin cần kiểm chứng. Điều này giúp giả định trở nên cụ thể và có khả năng đo lường hơn.
+
+### 6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?
+
+Điểm đáng chú ý nhất khi thực hiện nghiên cứu CP4 là đã có những công cụ hỗ trợ tìm kiếm và tổng hợp thông tin, chẳng hạn như GitHub Search, VS Code Search và GitHub Copilot Chat.
+
+Ban đầu, việc thông tin phân tán trong nhiều file có vẻ là lý do để xây dựng thêm một công cụ AI. Tuy nhiên, các giải pháp hiện có cho thấy nhóm cần làm rõ những hạn chế chưa được giải quyết trước khi đề xuất hệ thống mới.
+
+Phần research giúp tôi hiểu rằng không phải vấn đề nào liên quan đến nhiều thông tin cũng cần Agent. Với dữ liệu hiện có, nhóm chưa thể dùng kết quả phỏng vấn hoặc khảo sát để khẳng định mức độ phổ biến của vấn đề.
+
+### 6.5. Điều khó nhất khi viết Problem Statement là gì?
+
+Theo tôi, khó khăn lớn nhất là xác định chính xác bottleneck và xây dựng Success Metric có thể đo lường.
+
+Nếu chỉ mô tả rằng sinh viên mất nhiều thời gian đọc tài liệu thì vấn đề vẫn còn chung chung và khó đánh giá. Cần chỉ rõ sinh viên gặp khó khăn ở bước nào, hậu quả là gì và thế nào được xem là cải thiện.
+
+Qua phần CP4, tôi cũng nhận thấy các số liệu ước lượng không thể thay thế bằng chứng thực tế. Vì vậy, Problem Statement cần được xây dựng trên các giả định rõ ràng, sau đó cập nhật khi có kết quả kiểm chứng đáng tin cậy.
+
+### 6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?
+
+Nếu thực hiện lại, tôi sẽ ưu tiên xây dựng kế hoạch kiểm chứng ngay sau khi nhóm lựa chọn vấn đề.
+
+Tôi sẽ tập trung tìm hiểu trải nghiệm gần nhất của người dùng, cách họ đang xử lý công việc và những khó khăn thực sự phát sinh.
+
+Ngoài ra, tôi sẽ đặt nhiều câu hỏi hơn về tính cần thiết của AI, chẳng hạn:
+
+- Các công cụ hiện có đã giải quyết được phần nào?
+- Có thể sử dụng checklist hoặc Rule thay thế không?
+- Nếu dùng AI thì rủi ro bỏ sót hoặc hiểu sai yêu cầu được kiểm soát như thế nào?
+
+Điều này sẽ giúp nhóm đưa ra quyết định dựa trên bằng chứng thay vì cảm nhận.
+
+### 6.7. Hiểu bài: Giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi problem → quy trình → metric → boundary → mức can thiệp AI → quyết định của bài nhóm mình.
+
+Bài toán nhóm lựa chọn là sinh viên gặp khó khăn khi tổng hợp và đối chiếu yêu cầu bài Lab từ nhiều file tài liệu trên GitHub.
+
+Quy trình hiện tại gồm đọc các file hướng dẫn, tìm yêu cầu bắt buộc, đối chiếu tiêu chí và tự lập checklist trước khi thực hiện.
+
+Hiệu quả của quy trình có thể đánh giá thông qua thời gian hoàn thành checklist, số yêu cầu bị bỏ sót và độ chính xác của thông tin được tổng hợp.
+
+Boundary cần bảo đảm rằng AI chỉ hỗ trợ trích xuất và gợi ý yêu cầu, còn sinh viên phải kiểm tra nguồn và chịu trách nhiệm quyết định cuối cùng.
+
+Về mức can thiệp, nhóm có thể ưu tiên thử nghiệm Workflow với các bước cố định thay vì sử dụng Agent tự chủ.
+
+Việc lựa chọn giải pháp phải được so sánh với No AI và Rule để xác định lợi ích thực tế.
+
+Khi chưa có đủ dữ liệu kiểm chứng từ người dùng, quyết định phù hợp là tiếp tục thử nghiệm và đánh giá trước khi triển khai rộng rãi.
+
+
+## 7. Tài liệu tham khảo
+
+- [README](../../README.md)
+- [Worksheet](../../docs/01-worksheet.md)
+- [Rules](../../RULES.md)
