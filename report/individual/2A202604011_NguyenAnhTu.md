@@ -166,6 +166,30 @@ Giả sử 10 vấn đề trog thực tế
 | Mức can thiệp AI (CP6) | Xây dựng ma trận độ mơ hồ × độ phức tạp; so sánh No AI, Rule, Workflow và Agent; đề xuất thử nghiệm Workflow có người duyệt. | Đưa ra phương án pilot có thể so sánh với baseline, đồng thời tránh khẳng định trước rằng AI chắc chắn hiệu quả hơn. |
 | Quyết định | Đề xuất Workflow có người duyệt cho pilot: Rule tìm và trích các đoạn liên quan; AI tạo checklist nháp kèm nguồn; sinh viên kiểm tra và duyệt kết quả. | Có phương án thử nghiệm cụ thể. Quyết định cuối cùng cần dựa trên kết quả pilot và so sánh với No AI/Rule, không chỉ dựa trên nhận định ban đầu. |
 
+## 5. Dùng AI
+
+###5.1. Quyết định tại CP5
+
+| **Quyết định trong bản CP5** | **Vì sao cần làm rõ** | **Thể hiện ở báo cáo nhóm** |
+|---|---|---|
+| Giới hạn actor là sinh viên nhận bài lab qua repo GitHub | Phạm vi CP3 còn rộng, gồm cả đồ án và task từ email/Slack; repo Day 02 là bộ tài liệu nhóm có thể đối chiếu ngay | Mục 4.1 và trường Actor ở mục 5 |
+| Tách bước tìm file khỏi bước đối chiếu yêu cầu | Tìm đúng đoạn văn chưa có nghĩa đã biết mục đó bắt buộc, áp dụng cho ai và được chấm thế nào | Bước 2–4 của quy trình hiện tại; bước 4 được đánh dấu là bottleneck giả định |
+| Đo chất lượng checklist cùng với thời gian | Checklist lập nhanh nhưng thiếu một file phải nộp vẫn không giải được vấn đề | Success Metric: thời gian, số mục thiếu và số mục gán sai nguồn; cách đo trên cùng bộ file |
+| Giữ người học ở bước kiểm cuối | Tài liệu có thể có ngoại lệ hoặc hai chỗ diễn đạt khác nhau; AI không nên tự kết luận bài đã đạt hay tự nộp | Quy trình tương lai, Boundary và phương án quay về tìm kiếm/checklist thủ công |
+
+Các bước hiện tại cộng lại thành khoảng **20 phút** và quy trình đề xuất khoảng **12 phút**, nhưng đây là hai mốc để thiết kế phép so sánh. Tôi không dùng chênh lệch 8 phút làm kết quả cải thiện khi nhóm chưa chạy thử trên người dùng.
+
+Với candidate của nhóm, chất lượng đầu ra cần được kiểm bằng danh mục yêu cầu lấy từ file gốc, còn thời gian chỉ có ý nghĩa nếu checklist vẫn đủ và đúng nguồn.
+
+### 5.2. Dùng AI
+
+| **Checkpoint** | **Tôi dùng AI để làm gì?** | **AI hữu ích ở đâu?** | **AI sai hoặc thiếu ở đâu?** | **Tôi sửa gì?** |
+|---|---|---|---|---|
+| CP1 | Gợi ý candidate đời sống và hỗ trợ diễn đạt theo Job Story | Giúp mở rộng danh sách, làm rõ actor, việc cần làm và kết quả | Gợi ý không chứng minh người thật gặp pain; thời gian/tần suất không có nguồn xác nhận | Ghi rõ các candidate và con số là giả định/ước lượng, không mô tả thành trải nghiệm đã kiểm chứng |
+| CP2 | Phản biện ba card và chỉ ra thông tin còn thiếu | Nhắc nêu từng bước, bottleneck, metric và phương án Rule/checklist | Chưa thể xác nhận bottleneck hay target chỉ từ mô tả; không nên mặc định cần Agent | Đổi cách ghi từ kết luận sang giả thuyết; giữ baseline dạng tham khảo và để nhóm xác định target sau kiểm chứng |
+| CP3 và CP4 phỏng vấn | Không dùng AI | — | — | Tự pitch, tự phản biện và hỏi người thật |
+| CP5 | Tôi phụ trách phân tích quy trình và Problem Statement v0; dùng AI để rà lại lập luận và tìm chỗ còn thiếu | Gợi ý tách rõ đầu vào, đầu ra, bước bàn giao và người kiểm checklist | AI dễ xem thời gian ước lượng như số đã đo, hoặc đánh giá quá sớm rằng Workflow sẽ hiệu quả | Tôi giữ thời gian là mốc tham khảo, bổ sung cách đếm yêu cầu bị bỏ sót/sai nguồn và phương án quay về quy trình thủ công |
+
 ## 6. Mức can thiệp AI (CP6)
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
@@ -195,3 +219,8 @@ Quyết định cuối ở mục 8 cần xét kết quả kiểm chứng ngườ
 
 Pilot phải so sánh trên cùng bộ file; nếu checklist thủ công/Rule đã đủ mục và nhanh tương đương, giữ mức đơn giản hơn. Không chọn Agent vì thứ tự các bước đã xác định được và người học phải duyệt kết quả.
 
+## 7. Tài liệu tham khảo
+
+- README
+- Worksheet
+- Rules
