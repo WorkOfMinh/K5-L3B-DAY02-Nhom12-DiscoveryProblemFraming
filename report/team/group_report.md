@@ -98,51 +98,118 @@ Giải thích điểm:
 
 ### 3.1. Assumption Map
 
-| # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
+**Quy ước:** *Quan trọng* 1 = ít ảnh hưởng, 5 = nếu sai thì problem/giải pháp khó đứng vững; *đã có bằng chứng* 1 = chưa có chứng cứ trực tiếp, 5 = đã có dữ liệu phù hợp và kiểm tra được. Đây là **điểm đánh giá mức chắc chắn của giả định**, không phải kết quả survey. Mức ưu tiên tăng khi quan trọng cao nhưng bằng chứng thấp.
+
+| # | Giả định cần kiểm chứng | Loại | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Sinh viên **ngoài Nhóm 12** từng phải đối chiếu từ hai nguồn yêu cầu trở lên trong một bài lab/task gần đây và có công sức đáng kể cho việc này. | Value | 5 | 1 | **Ưu tiên 1**: hỏi sự kiện gần nhất |
+| 2 | Bước tốn công nhất là **tìm/đối chiếu yêu cầu giữa các nguồn**, không phải hiểu chuyên môn, làm bài hay sửa sản phẩm. | Value | 5 | 2 | **Ưu tiên 2**: yêu cầu kể từng bước, đối chiếu thời lượng |
+| 3 | Người dùng có thể kiểm tra checklist có **đường dẫn về đúng tài liệu và đúng tiêu chí gốc** mà không phải đọc lại toàn bộ hồ sơ. | Usability | 4 | 1 | **Ưu tiên 3**: kiểm tra với một bộ yêu cầu thật |
+| 4 | Với **repository có quyền truy cập**, có thể truy xuất tối thiểu README, hướng dẫn checkpoint, rubric và hướng dẫn nộp để đối chiếu. | Feasibility | 5 | 4 | Đã thấy với repo này; thử trên repo khác |
+| 5 | Một bản tổng hợp dựa trên **từ khóa hoặc AI** không được làm sót yêu cầu rải rác, và luôn phải chỉ ra nguồn khi có kết luận. | Feasibility | 5 | 2 | Kiểm trên các trường hợp yêu cầu nằm ở 2–4 file |
+| 6 | Việc thu thập tài liệu và dùng công cụ hỗ trợ tuân thủ quyền truy cập, bảo mật; không cần lấy tài liệu riêng tư hoặc tài khoản học tập của người khác. | Viability | 4 | 2 | Kiểm với loại nguồn mà người dùng thực tế sử dụng |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
+**Lý do chọn ưu tiên:** Giả định #1 và #2 quyết định **vấn đề có phổ biến, thực sự gây đau hay không**; giả định #3 và #5 quyết định **kết quả tổng hợp có đáng tin và kiểm tra được hay không**. Giả định #4 đã có tín hiệu về khả năng truy cập từ chính ZIP bài lab, nhưng việc mở được một repository không chứng minh mọi bài học hay nguồn bên ngoài đều truy cập được.
 
-Giả định nhóm kiểm chứng trong buổi này:
+**Giả định trọng tâm đưa vào kiểm chứng người dùng:** #1 và #2; nếu thời gian cho khâu đối chiếu không đáng kể hoặc người học đã có workaround đủ tốt, cần cân nhắc thu hẹp vấn đề hoặc chọn giải pháp No AI/Rule.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+#### 3.2.1. Kiểm chứng tài liệu (desk review — đã thực hiện)
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+Nhóm có thể trực tiếp quan sát **cấu trúc yêu cầu** trong ZIP repository được cung cấp. Đây là kiểm tra **sự phân tán thông tin**, **không phải bằng chứng người ngoài nhóm gặp pain**.
 
-| Trường | Nội dung |
+| Nguồn trong repository | Thông tin có thể đối chiếu | Điều quan sát được | Giới hạn kết luận |
+|---|---|---|---|
+| [`README.md`](../../README.md) | Bối cảnh, thứ tự đọc, cấu trúc repo, hướng dẫn bắt đầu | Có file dẫn nhập riêng cho người làm lab | Chưa đo được sinh viên mất bao lâu để đọc |
+| [`CHECKPOINTS.md`](../../CHECKPOINTS.md) | CP0–CP7, yêu cầu công việc và tự kiểm tra từng checkpoint | Chi tiết việc phải làm được tách sang file checkpoint | Không cho biết tỷ lệ người học làm thiếu |
+| [`RUBRIC.md`](../../RUBRIC.md) | Tiêu chí chấm, điểm, lỗi bị trừ và điều kiện chấm | Quy tắc đánh giá nằm ở tài liệu riêng | Không chứng minh bản rubric là khó hiểu |
+| [`SUBMISSION.md`](../../SUBMISSION.md) | Cấu trúc file, nơi nộp, deadline, checklist nộp bài | Quy định nộp xuất hiện trong tài liệu riêng | Không chứng minh ai đã nộp sai hoặc trễ |
+
+**Kết quả quan sát hợp lệ:** Với chính bài lab này, để kiểm tra đầy đủ *cần làm gì — chấm như thế nào — nộp ở đâu*, người học cần tham chiếu nội dung từ **nhiều file có vai trò khác nhau**. Đây là ví dụ đầu vào đủ rõ cho việc thử đối chiếu hoặc lập checklist. **Không kết luận** rằng đã xảy ra bỏ sót, mất một số phút xác định, hay đa số sinh viên đều gặp vấn đề.
+
+**Tín hiệu trong báo cáo nhóm CP3 (chỉ là dữ liệu nội bộ):** các candidate #10, #13, #15 liên quan đến đối chiếu yêu cầu/tiêu chí giữa các nguồn. Điều này hỗ trợ lý do **nhóm chọn hướng nghiên cứu**, nhưng không được tính là phỏng vấn độc lập: quy định CP4 không sử dụng thành viên cùng nhóm để thay cho người dùng bên ngoài.
+
+#### 3.2.2. Phỏng vấn người dùng / khảo sát (chưa thực hiện)
+
+**Trạng thái thực tế của tài liệu đầu vào:** ZIP chưa chứa bản ghi phỏng vấn, kết quả poll/survey hoặc log thời gian từ người dùng ngoài nhóm. Do đó:
+
+- **Phỏng vấn đã thực hiện có thể kiểm chứng:** 0 người.
+- **Phiếu khảo sát có phản hồi được cung cấp:** 0 người.
+- **Tín hiệu xác nhận pain từ người dùng ngoài nhóm:** chưa có.
+- **Tín hiệu phản bác từ người dùng ngoài nhóm:** chưa có.
+
+**Cách thu thập phù hợp rubric:** Chọn **2–3 sinh viên ngoài nhóm** đã làm lab có nhiều tài liệu, phỏng vấn ngắn về **lần gần nhất đã diễn ra**; hoặc làm micro survey **5–10 sinh viên** có trải nghiệm tương tự. Không phỏng vấn thành viên Nhóm 12 để đủ mẫu. Chỉ ghi vai trò và thời điểm, không công khai họ tên, email hay số điện thoại.
+
+**Bộ câu hỏi hành vi cho người phỏng vấn (theo The Mom Test):**
+
+1. Trong bài lab/task gần nhất, bạn nhận hướng dẫn từ những nguồn hoặc file nào?
+2. Hãy kể từ lúc mở đề đến lúc bạn có danh sách việc phải nộp: bạn đã làm những bước nào?
+3. Lần đó có bước nào bạn phải mở lại tài liệu hoặc đối chiếu hai nguồn không? Hãy kể một ví dụ cụ thể.
+4. Bạn ước lượng đã mất bao nhiêu phút cho **riêng việc tìm và đối chiếu yêu cầu**? Có ghi chép hay thời điểm nào giúp kiểm lại không?
+5. Bạn đã dùng checklist, Ctrl+F, tìm kiếm trong editor hoặc nhờ người khác giải thích chưa? Cách đó xử lý được gì, còn vướng gì?
+6. Trong bài gần nhất, bạn có bỏ sót hoặc hiểu sai một yêu cầu nào không? Nếu có, hậu quả cụ thể là gì; nếu không, điều gì giúp bạn tránh được?
+
+Các câu hỏi này tránh giả định rằng ai cũng có pain, không hỏi kiểu “Bạn có muốn một chatbot không?”. 
+
+
+| Trường | Nội dung cần ghi từ người thật |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Nguồn/mã ẩn danh, vai trò và thời điểm | Sinh viên ngoài Nhóm 12; hình thức và ngày phỏng vấn thực tế |
+| Câu nói đáng nhớ (nguyên văn) | Chỉ chép sau khi đã nghe người đó nói |
+| Lần gần nhất gặp vấn đề | Bài lab/task cụ thể và chuyện đã xảy ra |
+| Quy trình/workaround hiện tại | Người đó đã làm gì để xử lý |
+| Thời gian/tần suất | Số do người được hỏi cung cấp hoặc log có căn cứ; ghi rõ nguồn |
+| Insight và tín hiệu phản bác (nếu có) | Kết luận rút ra trực tiếp từ lời kể/hành vi |
 
-Tổng hợp:
+**Nếu dùng survey thay phỏng vấn**, phiếu nên thu thập: (1) lần làm lab gần nhất, (2) số nguồn hướng dẫn, (3) có phải đối chiếu không, (4) bước tốn thời gian nhất, (5) khoảng phút dùng để đọc/đối chiếu, (6) cách hiện đang xử lý, (7) có bỏ sót yêu cầu không. Không lấy câu trả lời giả định “sẽ dùng công cụ nếu có”.
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
+**Bảng tổng hợp bằng chứng tại thời điểm soạn CP4:**
+
+| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác hoặc giới hạn |
 |---|---:|---|---|
-| | | | |
+| Kiểm tra cấu trúc tài liệu lab trong ZIP | 4 file tài liệu chính | Yêu cầu làm bài, chấm điểm, nộp bài nằm ở các file có chức năng khác nhau | Chỉ cho thấy **nhiều nguồn thông tin**; không xác nhận pain, thời gian hay tỷ lệ bỏ sót |
+| Báo cáo CP3 của nhóm | 3 candidate cùng hướng (#10, #13, #15) | Nhóm có ví dụ pain để nghiên cứu sâu | Không độc lập; **không được tính** thay phỏng vấn/survey |
+| Người dùng ngoài nhóm | 0 | Chưa có bằng chứng xác nhận | Chưa có bằng chứng phản bác; cần thu thập thật |
+| Nghiên cứu công cụ hiện có (mục 3.3) | 3 tài liệu chính thức | Đã có công cụ tìm kiếm/làm việc với ngữ cảnh repository | Có thể vấn đề được giải quyết **một phần mà không cần xây công cụ mới** |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Tín hiệu phản bác hiện có từ research (không phải phỏng vấn):** VS Code và GitHub đã hỗ trợ tìm kiếm tài liệu; GitHub Copilot hỗ trợ trả lời theo ngữ cảnh. Vì vậy, giả định “chưa có cách nào hỗ trợ đối chiếu” **không đúng**. Điều cần kiểm tiếp là các công cụ sẵn có đã đủ cho người dùng mục tiêu hay chưa.
+
+#### 3.2.3. Nhóm đã sửa problem thế nào sau bước rà soát hiện có?
+
+| Phiên bản | Cách phát biểu | Cơ sở thay đổi |
+|---|---|---|
+| CP3 — phạm vi rộng | Sinh viên/ thực tập sinh nhận bài lab, đồ án hoặc task từ nhiều file, email, Slack... và muốn biết đủ yêu cầu, tiêu chí, hạn nộp. | Hợp nhất nhiều candidate có pattern tương tự trong CP3. |
+| CP4 — **phạm vi thử nghiệm đề xuất** | Sinh viên **đang làm bài lab có repository GitHub nhiều file hướng dẫn** cần lập checklist đầy đủ yêu cầu và tiêu chí, với **đường dẫn về đúng nguồn**, trước khi thực hiện/nộp bài. | Repo này có đủ nhiều loại tài liệu có thể đối chiếu; không cần truy cập dữ liệu lớp học, email hay Slack riêng tư. Các công cụ tìm kiếm hiện có là baseline No AI/Rule để so sánh. |
+
+**Nhận định hiện tại:** Việc thu hẹp trên là **kết quả desk review và đánh giá khả thi**, chưa phải quyết định được xác nhận bởi phỏng vấn người dùng. Do chưa có phản hồi người ngoài nhóm, chưa được khẳng định người dùng thực sự cần sản phẩm mới. Nhóm chỉ nên chốt thay đổi cuối cùng sau khi phỏng vấn/survey thật, có ít nhất một tín hiệu phản bác được ghi nhận (nếu xuất hiện).
 
 ### 3.3. Research giải pháp đã có
 
-| Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
+Nghiên cứu ba hướng hỗ trợ **có thật**, so sánh với thao tác thủ công (No AI) để tránh mặc định phải xây Agent. Các nhận định tính năng dựa trên tài liệu chính thức, **không phải kết quả thử nghiệm hiệu suất trên người dùng của nhóm**.
+
+| Công cụ / case / pattern | Link nguồn chính thức | Giải bước nào trong quy trình? | Điểm mạnh đã được mô tả | Khoảng trống / rủi ro trong bài toán của nhóm | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **GitHub Code Search** | [GitHub Docs — Code Search syntax](https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax) | Tìm nhanh file/đoạn có từ khóa như `submission`, `rubric`, `deadline` hoặc lọc trong một repo bằng `repo:` | Có toán tử, tìm cụm chính xác và qualifier `repo:` / `path:`; không cần viết công cụ mới | Từ khóa có thể không trùng cách diễn đạt; người dùng vẫn cần đọc ngữ cảnh và tự tổng hợp các mục liên quan | Đặt làm baseline **No AI/Rule**; tiêu chí thành công không thể chỉ là “tìm được từ khóa” |
+| **Visual Studio Code — Search across files** | [VS Code — Basic editing, Search across files](https://code.visualstudio.com/docs/editing/codebasics#_search-across-files) | Tìm thông tin đồng thời trong các file Markdown sau khi mở thư mục repo | Tìm kiếm toàn workspace, hiện kết quả theo file/vị trí; có thể lọc phạm vi tìm kiếm | Yêu cầu mở/clone thư mục; vẫn là tìm chuỗi, chưa tự suy ra mục bắt buộc, phân biệt ngoại lệ và ngữ cảnh | Một checklist có liên kết file/đoạn nguồn chỉ có giá trị nếu cải thiện được việc rà soát thủ công bằng VS Code |
+| **GitHub Copilot Chat (repo/file context)** | [GitHub Docs — Copilot Chat responsible use](https://docs.github.com/en/copilot/responsible-use/chat) | Hỗ trợ hỏi-đáp, diễn giải và tóm tắt nội dung file/repository theo ngữ cảnh được cấp | Có thể dùng nội dung file hoặc repo làm ngữ cảnh để tạo phản hồi tự nhiên | Mô hình có thể trả lời sai hoặc thiếu; ngữ cảnh có giới hạn, không bảo đảm mọi file đều được xem; cần kiểm tra đầu ra với nguồn gốc | Nếu thử Workflow có AI, đầu ra chỉ là **bản nháp có dẫn nguồn**; con người kiểm từng yêu cầu và không để AI tự quyết định “đã đủ để nộp” |
+
+**So sánh mức giải quyết vấn đề (đánh giá định tính):**
+
+| Tiêu chí | GitHub Search | VS Code Search | Copilot Chat |
+|---|---|---|---|
+| Tìm cụm/từ khóa trong file | Có | Có | Có thể hỗ trợ qua ngữ cảnh và truy xuất phù hợp |
+| Tự tạo checklist diễn giải bằng ngôn ngữ tự nhiên | Không phải chức năng trọng tâm | Không phải chức năng tìm kiếm cơ bản | Có thể hỗ trợ tạo bản nháp, cần kiểm chứng |
+| Bảo đảm không bỏ sót mọi yêu cầu | Không thể khẳng định | Không thể khẳng định | Không thể khẳng định |
+| Cần con người kiểm đối chiếu nguồn | Có | Có | **Bắt buộc**, vì có rủi ro trả lời thiếu/sai |
+| Phù hợp làm baseline không dùng AI | **Có** | **Có** | Không |
+
+**Khoảng trống cần kiểm bằng thử nghiệm:** Vấn đề không phải là “không có công cụ tìm kiếm”, mà là liệu người học có thể tạo **một checklist đủ mục bắt buộc, đúng nguồn và rà soát nhanh hơn** khi yêu cầu trải rộng trên nhiều file. Giải pháp phải được đánh giá với cùng một bộ tài liệu, so sánh số mục bỏ sót, số mục gán sai nguồn và thời gian thực hiện; không được công bố cải thiện khi chưa đo.
+
+**Kết luận CP4 ở trạng thái hiện có:** Assumption Map và nghiên cứu giải pháp đã có đã được hoàn thành ở mức **phân tích tài liệu**. Điều kiện về **phỏng vấn thật 2–3 người hoặc survey 5–10 người chưa đạt**, vì ZIP chưa có dữ liệu. Do vậy, phần xác nhận Value và kết luận nhóm đã điều chỉnh problem **sau kiểm chứng người dùng** chưa thể hoàn tất một cách trung thực. Dữ liệu này cần được nhóm thu thập trực tiếp trước khi chốt CP4 chính thức và chuyển sang lập metric baseline ở CP5.
 
 ---
+
 
 ## 4. Quy trình trước/sau (CP5)
 
