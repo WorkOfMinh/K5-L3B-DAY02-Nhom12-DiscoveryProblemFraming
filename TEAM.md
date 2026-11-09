@@ -79,3 +79,23 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 * Việc một repo có nhiều file hướng dẫn chỉ xác nhận nguồn thông tin phân tán; cần người dùng ngoài nhóm để biết bước đối chiếu có thật là nghẽn. Checklist phải có nguồn và người học kiểm trước khi dùng.
 
+### NguyenAnhTu-2A202604088
+
+**Phần việc phụ trách:**
+
+* Theo phân công nhóm, phụ trách CP6 phần mức can thiệp và Problem Statement v1: ma trận độ mơ hồ × độ phức tạp, so sánh No AI/Rule/Workflow/Agent, AI Canvas, câu hỏi PAIR và tiêu chí đánh giá.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+* Đã nộp báo cáo cá nhân về các vấn đề học tập, gồm bảng scan CP1 và ba Problem Card CP2; bằng chứng là commit `8b3e7fa` do tài khoản `NguyenAnhTu-37-IT` tạo.
+* Mục 6–7 trong `report/team/group_report.md` đã có nội dung theo phần việc được phân công. Anh Tú cần trực tiếp rà soát, góp ý hoặc sửa và xác nhận phần mình thực sự đóng góp trước khi nhận đây là sản phẩm cá nhân của mình.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+* Commit `8b3e7fa` và file báo cáo cá nhân hiện có: `report/individual/2A202604011_NguyenAnhTu.md`.
+* Báo cáo nhóm mục 6–7 là nơi ghi sản phẩm CP6; cần bổ sung commit hoặc thay đổi cụ thể của Anh Tú sau khi anh ấy rà soát. Tên file báo cáo cá nhân hiện chưa khớp MSSV `2A202604088` ghi trong nội dung và bảng thành viên.
+
+**Điều mình học được từ phần nhóm:**
+
+* Anh Tú tự bổ sung nhận xét từ việc đối chiếu No AI, Rule, Workflow và Agent sau khi rà soát mục 6–7; không ghi hộ trải nghiệm cá nhân khi chưa có xác nhận.
+

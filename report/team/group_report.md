@@ -128,6 +128,15 @@ Nhóm có thể trực tiếp quan sát **cấu trúc yêu cầu** trong ZIP rep
 
 **Kết quả quan sát hợp lệ:** Với chính bài lab này, để kiểm tra đầy đủ *cần làm gì — chấm như thế nào — nộp ở đâu*, người học cần tham chiếu nội dung từ **nhiều file có vai trò khác nhau**. Đây là ví dụ đầu vào đủ rõ cho việc thử đối chiếu hoặc lập checklist. **Không kết luận** rằng đã xảy ra bỏ sót, mất một số phút xác định, hay đa số sinh viên đều gặp vấn đề.
 
+**Ba tình huống đối chiếu cụ thể từ bộ tài liệu Day 02:**
+
+| Tình huống | Các nguồn cần đối chiếu | Kết quả người học cần rút ra |
+|---|---|---|
+| Xác định việc cá nhân và nơi nộp | [`README.md`](../../README.md) nêu CP1, CP2, CP7 làm cá nhân; [`SUBMISSION.md`](../../SUBMISSION.md) quy định báo cáo cá nhân nằm trong repo nhóm và mỗi người nộp cùng link repo trên LMS | Không tạo repo riêng; mỗi người có file cá nhân đúng tên và tự nộp link repo nhóm |
+| Phân biệt dùng AI ở từng checkpoint | [`RULES.md`](../../RULES.md) nêu AI được dùng để phản biện CP5–CP6 nhưng không viết reflection thay; [`RUBRIC.md`](../../RUBRIC.md) nêu điều kiện chấm C4 | Nhật ký AI phải ghi đúng phần đã dùng; reflection CP7 do cá nhân tự viết |
+| Kiểm tra đủ sản phẩm nhóm và trách nhiệm | [`CHECKPOINTS.md`](../../CHECKPOINTS.md) liệt kê sản phẩm CP3–CP6; [`SUBMISSION.md`](../../SUBMISSION.md) yêu cầu `group_report.md` và `TEAM.md`; [`RUBRIC.md`](../../RUBRIC.md) quy định điểm phần nhóm phụ thuộc hai file này và đóng góp thật | Checklist cần có cả báo cáo nhóm, TEAM, nội dung theo checkpoint và phần việc của từng thành viên |
+
+
 **Tín hiệu trong báo cáo nhóm CP3 (chỉ là dữ liệu nội bộ):** các candidate #10, #13, #15 liên quan đến đối chiếu yêu cầu/tiêu chí giữa các nguồn. Điều này hỗ trợ lý do **nhóm chọn hướng nghiên cứu**, nhưng không được tính là phỏng vấn độc lập: quy định CP4 không sử dụng thành viên cùng nhóm để thay cho người dùng bên ngoài.
 
 #### 3.2.2. Phỏng vấn người dùng / khảo sát (chưa thực hiện)
@@ -163,6 +172,14 @@ Các câu hỏi này tránh giả định rằng ai cũng có pain, không hỏi
 | Insight và tín hiệu phản bác (nếu có) | Kết luận rút ra trực tiếp từ lời kể/hành vi |
 
 **Nếu dùng survey thay phỏng vấn**, phiếu nên thu thập: (1) lần làm lab gần nhất, (2) số nguồn hướng dẫn, (3) có phải đối chiếu không, (4) bước tốn thời gian nhất, (5) khoảng phút dùng để đọc/đối chiếu, (6) cách hiện đang xử lý, (7) có bỏ sót yêu cầu không. Không lấy câu trả lời giả định “sẽ dùng công cụ nếu có”.
+
+*phỏng vấn phân tích (dữ liệu mô phỏng, không tính là mẫu CP4):**
+
+| Mã và vai trò giả định | Lần làm bài được mô phỏng | Câu trả lời giả định | Workaround / thời gian giả định | Tín hiệu rút ra nếu gặp ngoài thực tế |
+|---|---|---|---|---|
+| S1 — sinh viên nhận lab qua repo GitHub | Bài có README, rubric và hướng dẫn nộp ở các file khác nhau | “Mình ghi xong danh sách việc cần làm rồi vẫn phải mở rubric để xem phần nào có điểm và mở hướng dẫn nộp để kiểm tên file.” | Ghi checklist bằng tay; khoảng 18 phút, mở lại hai file khi kiểm | Ủng hộ giả thuyết đối chiếu nhiều nguồn gây thêm công; cần hỏi tiếp có mục nào từng bị sót và thời gian lấy từ đâu |
+| S2 — sinh viên quen dùng VS Code Search | Bài có bốn file Markdown hướng dẫn | “Mình tìm `deadline`, `submission`, `rubric` rồi ghi vào checklist; lần đó không thiếu mục nào.” | Tìm kiếm toàn thư mục và dùng checklist cá nhân; khoảng 7 phút | **Phản bác** giả thuyết công cụ hiện có chưa đủ; có thể No AI/Rule đã giải được với người dùng thành thạo |
+| S3 — sinh viên hiểu sai tiêu chí dù tìm đúng file | Bài có một tiêu chí chấm diễn đạt ngắn trong rubric | “Mình thấy đúng đoạn rubric, nhưng không biết ví dụ trong README có bắt buộc làm theo không nên phải hỏi bạn cùng lớp.” | Đọc lại ngữ cảnh và hỏi người khác; khoảng 15 phút, chưa rõ riêng bước đối chiếu mất bao lâu | Pain có thể nằm ở **diễn giải yêu cầu**, không phải tìm file; cần tách hai bước khi phỏng vấn thật |
 
 **Bảng tổng hợp bằng chứng tại thời điểm soạn CP4:**
 
@@ -292,38 +309,36 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
-
-Vì sao:
+**Ô đề xuất:** Độ mơ hồ **trung bình–cao**, độ phức tạp **trung bình**. Người học cần phân biệt yêu cầu bắt buộc, ví dụ minh họa, ngoại lệ và sự khác nhau giữa các file; một câu có thể cần đọc ngữ cảnh mới hiểu đúng. Quy trình xử lý vẫn gồm các bước cố định: chọn file → tìm/trích mục → ghép tiêu chí → người kiểm → lập checklist. Vì vậy có thể thử Workflow có một bước AI; chưa có lý do để AI tự chọn công cụ hoặc tự lặp như Agent. Đây là đánh giá cấu trúc bài toán từ desk review CP4, chưa phải kết quả thử nghiệm với người dùng.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Sinh viên dùng mẫu checklist và tìm kiếm GitHub/VS Code để tự điền, gắn link nguồn | File ít, yêu cầu rõ, người học lập checklist đủ nhanh và không bỏ sót | Tự đọc/ghép các file; dễ quên điều kiện nằm ở file khác | Baseline bắt buộc để so sánh |
+| **Rule** | Script liệt kê file, tiêu đề và các từ khóa như `phải`, `nộp`, `deadline`, `rubric` | Cấu trúc tài liệu ổn định và mục bắt buộc có mẫu diễn đạt rõ | Bỏ sót cách diễn đạt khác, dễ lấy cả ví dụ minh họa | Thử cho bước thu thập, không tự kết luận |
+| **Workflow** | Rule lấy các đoạn liên quan → AI tạo checklist nháp kèm nguồn → sinh viên đối chiếu và duyệt | Khi Rule tìm được nguồn nhưng chưa ghép/diễn giải được yêu cầu nằm ở nhiều file; đầu ra kiểm tra được | AI có thể thiếu mục, sai nguồn, hiểu sai ngoại lệ; cần người duyệt | **Đề xuất thử trong pilot**, chưa khẳng định hiệu quả |
+| **Agent** | AI tự duyệt repo, tự chọn file/công cụ, tự quyết bước tiếp theo và hoàn tất checklist | Chỉ cần khi nguồn và nhánh xử lý thay đổi khó viết trước thành quy trình | Quyền truy cập và hành động rộng hơn, khó truy vết, thêm chi phí | Không chọn cho phạm vi repo Markdown hiện tại |
 
-**Mức chọn:**
+**Mức đề xuất cho pilot:** Workflow có người duyệt. Quyết định cuối ở mục 8 phải xét kết quả kiểm chứng người dùng và bốn rủi ro; ở trạng thái hiện tại chưa thể công bố Workflow tốt hơn baseline.
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao cần thử vượt No AI/Rule:** Ba tình huống ở CP4 cho thấy thông tin cần ghép từ hai hoặc ba file để thành một mục checklist. Tìm kiếm và Rule giúp định vị đoạn văn, nhưng vẫn để người học phân biệt quy định, ví dụ và ngoại lệ. Pilot phải so sánh trên cùng bộ file; nếu checklist thủ công/Rule đã đủ mục và nhanh tương đương, giữ mức đơn giản hơn. Không chọn Agent vì thứ tự các bước đã xác định được và người học phải duyệt kết quả.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Checklist nháp gồm yêu cầu, loại mục (bắt buộc/khuyến nghị/điều kiện), đối tượng áp dụng và đường dẫn file/đoạn nguồn |
+| **Judgment** — con người cân nhắc, quyết định gì? | Sinh viên kiểm từng mục với file gốc, giải quyết trùng lặp và đánh dấu chỗ mâu thuẫn để hỏi coach |
+| **Action** — hành động cuối cùng là gì, ai làm? | Sinh viên sửa, lưu checklist đã duyệt và tự làm/nộp bài; AI không nộp thay |
+| **Outcome** — đo kết quả bằng gì? | Thời gian lập checklist; số yêu cầu bắt buộc bị bỏ sót, số mục sai nguồn/sai điều kiện so với danh mục chuẩn |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Nội dung các file hướng dẫn trong repo được cấp quyền, phiên bản/commit đang xét và đường dẫn từng đoạn; bộ file Day 02 hiện có trong repo, các repo khác cần kiểm quyền và khả năng đọc |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Những mục sinh viên sửa/xóa/thêm khi duyệt và lỗi đối chiếu với danh mục chuẩn; không dùng dữ liệu riêng tư khi chưa được phép |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- **Augment hay automate?** Đề xuất augment: AI soạn nháp, sinh viên duyệt trước khi dùng. Desk review cho thấy có thể kiểm nguồn từng mục, nhưng CP4 chưa có phỏng vấn nên **chưa có bằng chứng về mức tự chủ người dùng mong muốn**. Cần hỏi người dùng ngoài nhóm và kiểm hành vi khi họ duyệt checklist.
+- **Báo nhầm hay bỏ sót?** Bỏ sót một yêu cầu bắt buộc có thể dẫn đến thiếu đầu ra hoặc bị trừ điểm, nên nguy hiểm hơn báo thêm một mục để người học rà lại. Thiết kế ưu tiên độ bao phủ, dẫn nguồn từng mục và buộc người dùng kiểm với file gốc. Báo nhầm vẫn phải đo vì làm tăng thời gian rà soát.
 
 ---
 
@@ -331,29 +346,34 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Sinh viên nhận bài lab có repository GitHub và nhiều file hướng dẫn; phạm vi pilot chỉ gồm file mà sinh viên được quyền đọc |
+| **Quy trình** | Hiện tại sinh viên mở repo → đọc hướng dẫn/checkpoint → tìm yêu cầu nộp → đối chiếu rubric/rules → lập checklist có nguồn → rà lại trước khi làm bài |
+| **Bottleneck** | Ghép yêu cầu nằm ở nhiều file, phân biệt bắt buộc với ví dụ/ngoại lệ; hiện là giả thuyết từ desk review, chưa xác nhận bằng phỏng vấn |
+| **Impact** | Có nguy cơ mất công rà soát, thiếu mục nộp hoặc hiểu sai tiêu chí; mức độ và tần suất thực tế chưa đo |
+| **Success Metric** (baseline → target, cách đo) | Baseline thời gian **tạm ước lượng** ~20 phút/lần; baseline lỗi chưa có. Target pilot đề xuất ≤12 phút, 0 mục bắt buộc bị bỏ sót và 0 nguồn/điều kiện sai sau khi người dùng duyệt. Đo trên cùng bộ file và cùng danh mục chuẩn: ghi thời gian, đếm mục thiếu/sai cho cách thủ công/Rule và Workflow; chỉ kết luận khi có dữ liệu thật |
+| **Boundary** | AI chỉ đọc file được cấp quyền và tạo nháp có dẫn nguồn; không tự xác nhận đạt rubric, không tự nộp, không tự chọn quy định khi file mâu thuẫn. Sinh viên duyệt từng mục; thiếu nguồn thì quay về tìm kiếm và checklist thủ công |
+| **AI intervention point** | Sau bước Rule tìm đoạn liên quan, trước bước sinh viên kiểm: AI ghép và diễn giải thành checklist nháp |
+| **Mức chọn** | Workflow **đề xuất để thử**, chưa chốt triển khai rộng |
+| **Rủi ro & người kiểm tra** | Bỏ sót yêu cầu, gán nhầm nguồn hoặc hiểu sai ngoại lệ; sinh viên đối chiếu file gốc, coach làm rõ trường hợp tài liệu mâu thuẫn |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Phạm vi actor | Sinh viên nhận bài lab có nhiều file hướng dẫn | Giới hạn pilot vào repo GitHub và file có quyền đọc | CP4 desk review mới xác nhận được cấu trúc repo này; không suy rộng sang email/Slack |
+| AI intervention point | v0 chưa chọn cách can thiệp | Rule định vị đoạn, AI ghép yêu cầu thành checklist nháp, sinh viên duyệt | Chỉ rõ bước thử nghiệm mà không lẫn giải pháp vào mô tả quy trình hiện tại |
+| Success Metric | Ước lượng thời gian và dự kiến đếm lỗi | Nêu target pilot về thời gian và 0 lỗi thiếu/sai nguồn sau duyệt | Rút từ phản biện v0: nhanh hơn nhưng sai nhiều hơn thì không đạt |
+| Boundary | Người dùng kiểm nguồn, AI không tự nộp | Bổ sung cách xử lý nguồn thiếu/mâu thuẫn và quay về thủ công | Giảm nguy cơ checklist trông đầy đủ nhưng không kiểm được |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Bao phủ yêu cầu bắt buộc | Bản nháp nêu mọi mục trong danh mục chuẩn của bộ file thử nghiệm | Thiếu dù chỉ một mục bắt buộc |
+| 2 | Đúng nguồn và điều kiện | Mỗi mục có link đúng file/đoạn, ghi đúng đối tượng áp dụng và điều kiện/ngoại lệ | Dẫn sai nguồn, bỏ điều kiện hoặc biến ví dụ thành quy định |
+| 3 | Không tự thêm quy định | Mọi deadline, tên file, tiêu chí và điểm đều truy được về nội dung đầu vào | Có một thông tin tự suy ra nhưng trình bày như quy định |
+| 4 | Xử lý chỗ chưa rõ | Bản nháp đánh dấu yêu cầu thiếu nguồn, mâu thuẫn hoặc có nhiều cách hiểu để người dùng kiểm | Tự chốt một cách hiểu khi các file chưa thống nhất |
+| 5 | Đầu ra dùng được | Mỗi dòng checklist có việc cần làm, nguồn và đối tượng áp dụng; mục trùng được gộp nhưng vẫn giữ đủ nguồn | Dòng quá chung chung, thiếu nguồn hoặc gộp làm mất điều kiện |
 
 ---
 
