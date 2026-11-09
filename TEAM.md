@@ -69,11 +69,12 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
 * Phụ trách nội dung mục 4–5 trong `report/team/group_report.md`: xác định actor, input/output, handoff và bước nghẽn của quy trình hiện tại.
+* Ở CP3, đưa ba card đời sống vào bảng pitch và đặt bốn câu hỏi phản biện cho các card #1, #6, #10 và #13; nội dung câu hỏi được ghi trong mục 2.1 của báo cáo nhóm.
 * Xây dựng quy trình đề xuất, phân rõ phần Rule, AI và người duyệt; bổ sung boundary, phương án quay về, bảng before/after và metric cho Problem Statement v0. Tôi chịu trách nhiệm rà soát nội dung trước khi nhóm chốt bản cuối.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-* `report/team/group_report.md`, mục 4–5; báo cáo cá nhân `report/individual/2A202604113_PhamTranQuoc.md`. Số liệu phút trong CP5 là ước lượng, chưa phải log đo thực tế.
+* `report/team/group_report.md`, mục 2.1 và 4–5; báo cáo cá nhân `report/individual/2A202604113_PhamTranQuoc.md`. Số liệu phút trong CP5 là ước lượng, chưa phải log đo thực tế.
 
 **Điều mình học được từ phần nhóm:**
 
