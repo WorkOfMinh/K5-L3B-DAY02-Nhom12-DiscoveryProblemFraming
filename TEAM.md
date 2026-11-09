@@ -135,3 +135,28 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 * Anh Tú tự bổ sung nhận xét từ việc đối chiếu No AI, Rule, Workflow và Agent sau khi rà soát mục 6–7; không ghi hộ trải nghiệm cá nhân khi chưa có xác nhận.
 
+### HoangMinh-2A202604103
+
+**Phần việc phụ trách:**
+* Là trưởng nhóm, tham gia pitch và thảo luận chọn candidate problem; theo phân công, phụ trách CP6 phần Quyết định, gồm đánh giá bốn rủi ro Value, Usability, Feasibility, Viability và đề xuất Go / Not Yet / No-Go.
+
+**Đóng góp cụ thể (mình đã làm gì, ra sản phẩm gì):**
+
+* Đưa ra ba candidate ở CP2: kiểm tra bài theo rubric, ưu tiên task có deadline gần nhau và hiểu yêu cầu task thực tập từ nhiều nguồn. Candidate kiểm tra rubric được đưa vào Cluster A trong CP3.
+* Tham gia thảo luận và tiếp nhận phản biện về bottleneck của card kiểm tra rubric; nhận ra các mốc thời gian ở CP2 là ước lượng, chưa đủ căn cứ để kết luận bước sửa bài là điểm nghẽn thực tế.
+* Phụ trách hoàn thiện Mục 8 của report/team/group_report.md: đánh giá bốn rủi ro, ghi rõ giới hạn bằng chứng và thống nhất quyết định Go trong phạm vi pilot nhỏ thay vì xem đây là quyết định triển khai rộng.
+* Đề xuất điều kiện pilot so sánh No AI, Rule và Workflow trên cùng repository; đo thời gian, số yêu cầu bắt buộc bị bỏ sót, lỗi nguồn/điều kiện và công sức người dùng phải chỉnh sửa. Bổ sung ngưỡng dừng và phương án quay về checklist kết hợp GitHub/VS Code Search.
+* Bổ sung Mục 9 về hạn chế và hướng tiếp theo, nhấn mạnh việc chưa có phỏng vấn/survey ngoài nhóm và các mốc thời gian vẫn là ước lượng.
+
+**Bằng chứng** (phần nào trong group_report.md, file nào trong report/assets/, commit nào):
+
+* report/individual/2A202604103_HoangMinh.md: Mục 2 (CP1), Mục 3 (CP2) và Mục 4–5 ghi nhận candidate cá nhân, phản biện và quá trình tham gia.
+* report/team/group_report.md: Mục 2.1 (các candidate #13–#15 của Minh), Mục 2.4 (shortlist Candidate A), Mục 8 (bốn rủi ro và quyết định CP6) và Mục 9 (hạn chế, hướng tiếp theo).
+* TEAM.md: bảng phân công CP6 ghi Hoàng Minh phụ trách phần Quyết định. Không ghi commit cụ thể vì chưa có mã commit được cung cấp để xác nhận.
+
+**Điều mình học được từ phần nhóm:**
+
+* Tôi hiểu rằng chọn Go không đồng nghĩa với việc chứng minh AI đã cần thiết hoặc hiệu quả; Go ở đây chỉ cho phép thử nghiệm nhỏ có tiêu chí và ngưỡng dừng rõ ràng.
+* Tôi cần phân biệt bằng chứng desk review với bằng chứng từ người dùng. Khi chưa có phỏng vấn/survey ngoài nhóm, rủi ro Value vẫn cao và không nên kết luận problem đã được xác nhận.
+* Khi cân nhắc AI, cần so sánh với No AI và Rule trên cùng dữ liệu. Nếu tìm kiếm và checklist đã giải quyết đủ vấn đề, nhóm nên giữ phương án đơn giản hơn thay vì cố dùng Workflow hoặc Agent.
+* Tôi nhận ra quyết định tốt phải gắn với metric, boundary, người chịu trách nhiệm kiểm tra và phương án quay về khi kết quả không đáng tin.
