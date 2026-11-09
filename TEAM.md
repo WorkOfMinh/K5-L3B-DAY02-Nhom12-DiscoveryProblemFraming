@@ -5,8 +5,8 @@
 ## Thông tin nhóm
 
 * Tên nhóm: Nhóm 12
-* Candidate problem nhóm chọn (1 câu):
-* Quyết định cuối (Go / Not Yet / No-Go):
+* Candidate problem nhóm chọn (1 câu): Khi nhận bài lab, đồ án hoặc task có yêu cầu và tiêu chí chấm rải rác ở nhiều file hoặc kênh, sinh viên muốn biết đủ đầu ra bắt buộc, tiêu chí chấm và hạn nộp, để không phải đối chiếu thủ công và không bị sót hay trừ điểm.
+* Quyết định cuối (Go / Not Yet / No-Go): Go (phạm vi pilot nhỏ)
 
 ## Thành viên
 
@@ -38,6 +38,28 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
+### TruongVanPhong-2A202604091
+
+**Phần việc phụ trách:**
+
+* Phụ trách chính CP3 (Hội tụ nhóm): điều phối tổng hợp 15 Problem Card, phân nhóm Cluster, xây dựng cây Opportunity Solution Tree (OST) và lập bảng chấm điểm shortlist.
+* Tham gia phản biện các Problem Card, đóng góp xây dựng ranh giới an toàn (Boundary) và xác định mức can thiệp Workflow ở CP5–CP6.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+* Hoàn thiện toàn bộ Mục 2 trong `report/team/group_report.md`: bảng Pitch 15 candidate, bảng 4 Cluster, cây OST loại bỏ các solution trá hình, và bảng chấm điểm 3 candidate với lập luận chọn Candidate A.
+* Đóng góp xây dựng quy trình Human-in-the-loop (con người duyệt) và phương án quay về (fallback plan) khi AI trích xuất sai.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+* Mục 2 (`## 2. Hội tụ nhóm (CP3)`) trong file `report/team/group_report.md`.
+* Báo cáo cá nhân `report/individual/2A202604091_TruongVanPhong.md`.
+
+**Điều mình học được từ phần nhóm:**
+
+* Nhận diện và gạt bỏ tư duy "solution-first": không vội vàng tìm kiếm công cụ AI khi chưa hiểu rõ điểm nghẽn thực sự trong quy trình của người dùng.
+* Học cách chấp nhận phản biện khách quan, từ bỏ thiên vị ý tưởng cá nhân để cùng nhóm chọn bài toán khả thi và tạo ra giá trị thiết thực nhất.
+
 ### HoVaTen-MSSV
 
 **Phần việc phụ trách:**
@@ -48,7 +70,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 * 
 
-**Bằng chứng** (phần nào trong `group\\\_report.md`, file nào trong `report/assets/`, commit nào):
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 * 
 
