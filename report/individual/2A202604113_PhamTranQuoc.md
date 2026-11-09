@@ -11,19 +11,19 @@
 
 Tôi chọn các tình huống có nhiều bước, nhiều nguồn thông tin hoặc ràng buộc thay đổi. Chúng **có thể** là bài toán cho AI hỗ trợ hoặc Agent, nhưng CP1 chỉ mô tả vấn đề. Sau khi đo và hỏi người thật, nhóm mới quyết định No AI, Rule, Workflow hay Agent.
 
-| # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu cần tự kiểm chứng |
+| # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu quan sát được / giả định ban đầu |
 |---:|---|---|---|---|
-| 1 | Lặp lại, cần tổng hợp thông tin | Khi chuẩn bị bữa ăn cho vài ngày tới, tôi muốn đối chiếu đồ còn trong nhà, nhu cầu ăn uống và giá thực phẩm, để mua đủ đồ mà không bỏ phí đồ ăn. | Người nấu ăn, người cùng nhà | **Ước tính để kiểm:** 2 lần/tuần, 25 phút/lần lập danh sách; tự bấm giờ và đếm món bị bỏ phí trong tuần tới. |
-| 2 | Tốn thời gian, nhiều nguồn | Khi đến kỳ thanh toán các khoản sinh hoạt, tôi muốn biết hóa đơn nào đã đến hạn, số tiền đúng và đã thanh toán chưa, để không trả trễ hoặc trả hai lần. | Người quản lý chi tiêu trong nhà | **Ước tính để kiểm:** 4–6 khoản/tháng từ nhiều ứng dụng; đếm khoản và phút đối chiếu trong kỳ tiếp theo. |
-| 3 | Cần tổng hợp nhiều thông tin | Khi phải làm nhiều việc ở các địa điểm khác nhau trong một ngày, tôi muốn sắp thứ tự di chuyển theo giờ mở cửa, thời gian đi và thời hạn từng việc, để không phải đi vòng hoặc lỡ giờ. | Người đi làm việc cá nhân, người đi cùng | **Ước tính để kiểm:** 3 điểm đến trong một buổi; ghi thời gian lập lịch và quãng đường thực tế cho một lần gần nhất. |
-| 4 | Pain từ người khác | Khi thiết bị trong nhà bị hỏng, người cùng nhà muốn biết ai có thể sửa, chi phí dự kiến và khi nào có người ở nhà, để không phải hỏi nhiều nơi rồi chốt lại từ đầu. | Người sống cùng nhà, người phụ trách sửa chữa | **Ước tính để kiểm:** liên hệ 2–3 nơi cho một lần sửa; chỉ giữ ý này nếu hỏi người thật đã từng trải qua. |
-| 5 | Tốn thời gian, nhiều nguồn | Khi tổ chức một chuyến đi ngắn cho gia đình hoặc bạn bè, tôi muốn đối chiếu lịch rảnh, ngân sách, đường đi và giờ hoạt động của địa điểm, để chốt kế hoạch phù hợp cho mọi người. | Người tổ chức và người tham gia | **Ước tính để kiểm:** 3–4 người, ít nhất 3 nguồn thông tin; đo số lượt sửa kế hoạch của một chuyến đi thật. |
+| 1 | Lặp lại, cần tổng hợp thông tin | Khi chuẩn bị bữa ăn cho vài ngày tới, tôi muốn đối chiếu đồ còn trong nhà, nhu cầu ăn uống và giá thực phẩm, để mua đủ đồ mà không bỏ phí đồ ăn. | Người nấu ăn, người cùng nhà | Có thể quan sát số món cần bổ sung, món mua trùng/bị bỏ phí và các bước kiểm đồ, hỏi nhu cầu, chọn món. **Giả định để hình dung:** khoảng 25 phút/lần, 2 lần/tuần; chưa đo. |
+| 2 | Tốn thời gian, nhiều nguồn | Khi đến kỳ thanh toán các khoản sinh hoạt, tôi muốn biết hóa đơn nào đã đến hạn, số tiền đúng và đã thanh toán chưa, để không trả trễ hoặc trả hai lần. | Người quản lý chi tiêu trong nhà | Có thể kiểm tra số khoản và nguồn thông báo, số lần phải mở lại lịch sử thanh toán hoặc hỏi lại. **Giả định để hình dung:** 4–6 khoản/tháng, khoảng 20 phút/kỳ; chưa xác nhận. |
+| 3 | Cần tổng hợp nhiều thông tin | Khi phải làm nhiều việc ở các địa điểm khác nhau trong một ngày, tôi muốn sắp thứ tự di chuyển theo giờ mở cửa, thời gian đi và thời hạn từng việc, để không phải đi vòng hoặc lỡ giờ. | Người đi làm việc cá nhân, người đi cùng | Có thể ghi số điểm đến, số lần đổi thứ tự/lộ trình và việc bị lỡ khung giờ. **Tình huống giả định:** khoảng 3 điểm đến; lập lịch khoảng 30 phút, tùy ràng buộc. |
+| 4 | Pain từ người khác | Khi thiết bị trong nhà bị hỏng, người cùng nhà muốn biết ai có thể sửa, chi phí dự kiến và khi nào có người ở nhà, để không phải hỏi nhiều nơi rồi chốt lại từ đầu. | Người sống cùng nhà, người phụ trách sửa chữa | Có thể quan sát số nơi cần liên hệ, số lần hỏi lại giá/lịch và số lần phải hẹn lại. **Giả định để hình dung:** so sánh 2–3 nơi; chưa có dữ liệu thực tế. |
+| 5 | Tốn thời gian, nhiều nguồn | Khi tổ chức một chuyến đi ngắn cho gia đình hoặc bạn bè, tôi muốn đối chiếu lịch rảnh, ngân sách, đường đi và giờ hoạt động của địa điểm, để chốt kế hoạch phù hợp cho mọi người. | Người tổ chức và người tham gia | Có thể ghi số người/nguồn thông tin, số lần thay đổi lịch trình và việc phải bỏ khỏi kế hoạch. **Tình huống giả định:** 3–4 người, khoảng 30–45 phút chuẩn bị; chưa đo. |
 
 **AI đã gợi ý gì, tôi giữ/bỏ gì:** AI gợi ý cả các việc đơn giản như nhắc mang đồ và chọn món ăn. Tôi bỏ việc nhắc mang đồ vì checklist có thể đủ, không thấy nhu cầu cho một hệ thống tự quyết nhiều bước. Tôi giữ 5 ý trên làm **candidate để kiểm chứng**, chưa khẳng định chúng là pain thật của mình. Với mỗi ý, tôi sẽ thay số ước tính bằng số đo hoặc một sự kiện cụ thể.
 
 ## 3. Top 3 Problem Cards + quy trình nháp (CP2)
 
-**Shortlist dự kiến:** #1 lập bữa ăn và mua sắm, #2 theo dõi hóa đơn, #3 sắp lịch nhiều điểm đến. Ba việc này có actor, input và kết quả rõ; đồng thời cho phép so sánh cách thủ công, Rule, Workflow và Agent. Các phút dưới đây là **ước tính minh họa, không phải baseline đã đo**.
+**Shortlist dự kiến:** #1 lập bữa ăn và mua sắm, #2 theo dõi hóa đơn, #3 sắp lịch nhiều điểm đến. Ba candidate có actor, đầu vào, kết quả và quy trình đủ rõ để mang ra pitch. Phút ở các quy trình là ước lượng minh họa nhằm làm rõ bước nào có thể là bottleneck; không phải số đo, cam kết hiệu quả hay ngưỡng chấm. Các mốc này có thể thay đổi hoặc bỏ nếu CP4 cho thấy giả định không đúng.
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
@@ -39,9 +39,9 @@ Tôi chọn các tình huống có nhiều bước, nhiều nguồn thông tin h
 | Actor | Người nấu ăn và mua thực phẩm cho gia đình |
 | Bối cảnh | Trước một lần đi chợ hoặc đặt thực phẩm cho 2–3 ngày |
 | Quy trình hiện tại | Kiểm đồ còn → hỏi người cùng nhà muốn ăn gì → chọn món → xem nguyên liệu/giá → lập danh sách → mua |
-| Bottleneck | Ghép món với nguyên liệu còn, khẩu vị và ngân sách; **ước tính 10 phút** |
-| Impact | Mua thiếu, mua trùng hoặc để hỏng nguyên liệu; cần đo số món bỏ phí |
-| Success metric | **Giả định:** 25 phút/lần lập danh sách → mục tiêu dưới 12 phút; bấm giờ 3 lần và đếm món bị bỏ phí |
+| Bottleneck | Ghép món với nguyên liệu còn, khẩu vị và ngân sách; **ước lượng khoảng 10 phút** |
+| Impact | Mua thiếu, mua trùng hoặc để hỏng nguyên liệu |
+| Success metric | Mốc tham khảo: khoảng 25 phút/lần (ước lượng, chưa đo). Khi kiểm chứng, có thể theo dõi thời gian hoàn tất và số món mua thiếu/trùng/bị bỏ phí; target sẽ được nhóm chốt dựa trên baseline có căn cứ |
 | Phương án không dùng AI | Danh sách nguyên liệu cố định, thực đơn luân phiên và checklist trước khi mua |
 | Giả thuyết về AI | Augment: gợi ý vài thực đơn dựa trên đồ còn; người dùng duyệt món và danh sách. Agent chỉ đáng cân nhắc nếu phải tự điều chỉnh nhiều bước theo giá, tồn kho và thay đổi của người dùng |
 | Cảm nhận nhanh | Workflow trước; chưa đủ bằng chứng chọn Agent |
@@ -49,7 +49,7 @@ Tôi chọn các tình huống có nhiều bước, nhiều nguồn thông tin h
 ```text
 [Kiểm đồ còn: 4'] → [Hỏi nhu cầu: 3'] → [Chọn món: 10'] ← nghẽn dự kiến
 → [Xem giá/nguyên liệu: 5'] → [Lập danh sách: 3']
-Tổng ước tính: 25 phút; phải đo lại.
+Tổng baseline ước lượng: 25 phút/lần.
 ```
 
 ### Problem Card #2 — Theo dõi hóa đơn
@@ -60,9 +60,9 @@ Tổng ước tính: 25 phút; phải đo lại.
 | Actor | Người quản lý chi tiêu trong nhà |
 | Bối cảnh | Đầu hoặc cuối tháng, khi nhiều thông báo thanh toán đến từ ứng dụng khác nhau |
 | Quy trình hiện tại | Mở từng ứng dụng/tin nhắn → ghi hạn và số tiền → đối chiếu lịch sử → sắp thứ tự hạn → thanh toán → lưu bằng chứng |
-| Bottleneck | Đối chiếu thông báo với khoản đã trả; **ước tính 8 phút/kỳ** |
-| Impact | Trả trễ hoặc nhầm khoản; cần hỏi người thật xem đã từng xảy ra chưa |
-| Success metric | **Giả định:** 20 phút/kỳ → mục tiêu dưới 10 phút; đo 2 kỳ và đếm khoản bị bỏ sót/trùng |
+| Bottleneck | Đối chiếu thông báo với khoản đã trả; **ước lượng khoảng 8 phút/kỳ** |
+| Impact | Có thể trả trễ hoặc nhầm khoản |
+| Success metric | Mốc tham khảo: khoảng 20 phút/kỳ (ước lượng, chưa đo). Có thể theo dõi thời gian đối chiếu và số khoản bỏ sót/thanh toán trùng; target cần được nhóm chốt sau khi biết baseline thực tế |
 | Phương án không dùng AI | Lịch nhắc cố định, bảng theo dõi và Rule đánh dấu khoản đến hạn |
 | Giả thuyết về AI | Augment việc đọc thông báo không đồng nhất, nhưng con người xác nhận số tiền. Automate nhắc hạn có thể dùng Rule; **không tự thanh toán** |
 | Cảm nhận nhanh | Rule có thể đủ; chưa thấy lý do dùng Agent |
@@ -70,7 +70,7 @@ Tổng ước tính: 25 phút; phải đo lại.
 ```text
 [Mở nguồn: 4'] → [Ghi khoản: 3'] → [Đối chiếu đã trả: 8'] ← nghẽn dự kiến
 → [Sắp hạn: 2'] → [Thanh toán/lưu chứng từ: 3']
-Tổng ước tính: 20 phút; phải đo lại.
+Tổng baseline ước lượng: 20 phút/kỳ.
 ```
 
 ### Problem Card #3 — Sắp việc ở nhiều địa điểm
@@ -81,7 +81,7 @@ Tổng ước tính: 20 phút; phải đo lại.
 | Actor | Người có nhiều việc cá nhân cần hoàn thành trong một buổi |
 | Bối cảnh | Trước khi ra ngoài và khi có địa điểm đóng cửa hoặc lịch đổi bất ngờ |
 | Quy trình hiện tại | Liệt kê việc → kiểm giờ mở cửa → tra đường → ước tính thời gian ở mỗi nơi → xếp thứ tự → điều chỉnh khi có thay đổi |
-| Bottleneck | Xếp thứ tự khi giờ mở cửa và di chuyển ràng buộc nhau; **ước tính 12 phút** |
+| Bottleneck | Xếp thứ tự khi giờ mở cửa và di chuyển ràng buộc nhau; **ước lượng khoảng 12 phút** |
 | Impact | Đi vòng, phải quay lại hoặc bỏ lỡ một việc |
 | Success metric | **Giả định:** 30 phút lập lịch → mục tiêu dưới 15 phút; đo số lần phải quay lại và thời gian di chuyển thực tế |
 | Phương án không dùng AI | Bản đồ có nhiều điểm dừng, lịch giờ mở cửa và bảng ưu tiên thủ công |
@@ -91,7 +91,7 @@ Tổng ước tính: 20 phút; phải đo lại.
 ```text
 [Liệt kê việc: 3'] → [Kiểm giờ: 5'] → [Tra đường: 5']
 → [Xếp thứ tự: 12'] ← nghẽn dự kiến → [Rà lại lịch: 5']
-Tổng ước tính: 30 phút; phải đo lại.
+Tổng baseline ước tính: 30 phút/lần.
 ```
 
 ### Card muốn pitch nhất
@@ -102,11 +102,11 @@ Tổng ước tính: 30 phút; phải đo lại.
 
 ### AI đã phản biện card thế nào
 
-| Điểm yếu AI chỉ ra | Đồng ý? | Tôi cần sửa gì |
+| Điểm yếu AI chỉ ra | Đồng ý? | Tôi đã chỉnh trong bản này |
 |---|---|---|
-| Chưa có số phút thật nên chưa biết bottleneck | Đồng ý | Bấm giờ ít nhất 2 lần, ghi từng bước |
-| Việc lập thực đơn có thể giải bằng template | Đồng ý | So sánh template/Rule trước khi chọn AI |
-| Chưa biết người cùng nhà có muốn máy tự quyết món hay chỉ gợi ý | Đồng ý | Hỏi hành vi và mức tự chủ mong muốn; phân biệt Augment với Automate |
+| Các mốc thời gian chưa phải dữ liệu đo nên chưa thể kết luận bottleneck | Đồng ý | Gắn nhãn toàn bộ số phút là ước lượng; mô tả bottleneck như giả thuyết, không dùng mốc phút làm tiêu chuẩn đánh giá. Nếu candidate được chọn, nhóm sẽ hỏi về lần gần nhất và xác định metric phù hợp ở CP4–CP5 |
+| Lập thực đơn có thể xử lý bằng checklist hoặc mẫu cố định | Đồng ý | Bổ sung phương án không dùng AI trước khi cân nhắc AI; chưa kết luận cần Agent |
+| Chưa biết người dùng muốn hệ thống tự quyết món/lịch hay chỉ đề xuất | Đồng ý | Giữ quyền quyết định ở người dùng trong giả thuyết ban đầu; ghi rõ mức can thiệp cần được kiểm chứng thay vì xem đây là yêu cầu đã xác nhận |
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
@@ -124,8 +124,8 @@ Tổng ước tính: 30 phút; phải đo lại.
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc thiếu ở đâu? | Tôi sửa gì? |
 |---|---|---|---|---|
-| CP1 | Sử dụng năm tình huống đời sống tôi đề xuất để viết lại theo Job Story | Giúp mở rộng phạm vi khỏi một bài lab | Các số phút AI gợi ý không phải bằng chứng | Đánh dấu tất cả là ước tính; chỉ giữ tình huống tôi xác nhận |
-| CP2 | Phản biện ba card, so sánh cách đơn giản với AI | Nêu câu hỏi về bottleneck và quyền tự quyết | Có thể kết luận Agent quá sớm | Giữ mức can thiệp là giả thuyết, yêu cầu đo và hỏi người thật |
+| CP1 | Gợi ý candidate đời sống và hỗ trợ diễn đạt theo Job Story | Giúp mở rộng danh sách, làm rõ actor, việc cần làm và kết quả | Gợi ý không chứng minh người thật gặp pain; thời gian/tần suất không có nguồn xác nhận | Ghi rõ các candidate và con số là giả định/ước lượng, không mô tả thành trải nghiệm đã kiểm chứng |
+| CP2 | Phản biện ba card và chỉ ra thông tin còn thiếu | Nhắc nêu từng bước, bottleneck, metric và phương án Rule/checklist | Chưa thể xác nhận bottleneck hay target chỉ từ mô tả; không nên mặc định cần Agent | Đổi cách ghi từ kết luận sang giả thuyết; giữ baseline dạng tham khảo và để nhóm xác định target sau kiểm chứng |
 | CP3 và CP4 phỏng vấn | Không dùng AI | — | — | Tự pitch, tự phản biện và hỏi người thật |
 | CP4 research, CP5–CP6 | Chưa thực hiện | — | — | Nếu dùng AI, ghi prompt, tự kiểm link và ghi sửa đổi thực tế |
 
