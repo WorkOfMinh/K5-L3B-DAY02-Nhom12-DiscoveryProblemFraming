@@ -64,21 +64,25 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-* Phụ trách CP5: mô tả quy trình hiện tại và kịch bản tương lai cho candidate nhóm chọn; viết bảng before/after và Problem Statement v0.
+* Phụ trách CP5 cho candidate nhóm chọn: sinh viên phải đối chiếu yêu cầu, tiêu chí và cách nộp bài nằm ở nhiều file trong repository lab. Tôi mô tả quy trình hiện tại, phác thảo quy trình tương lai, lập bảng before/after và viết Problem Statement v0 để nhóm có cơ sở thảo luận mức can thiệp ở CP6.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-* Phụ trách nội dung mục 4–5 trong `report/team/group_report.md`: xác định actor, input/output, handoff và bước nghẽn của quy trình hiện tại.
-* Ở CP3, đưa ba card đời sống vào bảng pitch và đặt bốn câu hỏi phản biện cho các card #1, #6, #10 và #13; nội dung câu hỏi được ghi trong mục 2.1 của báo cáo nhóm.
-* Xây dựng quy trình đề xuất, phân rõ phần Rule, AI và người duyệt; bổ sung boundary, phương án quay về, bảng before/after và metric cho Problem Statement v0. Tôi chịu trách nhiệm rà soát nội dung trước khi nhóm chốt bản cuối.
+* Ở CP3, tôi đưa ba Problem Card về các tình huống đời sống vào bảng pitch. Tôi đặt bốn câu hỏi phản biện cho card #1, #6, #10 và #13, tập trung vào cách làm hiện có, bằng chứng về bước nghẽn và trường hợp một checklist hoặc Rule đã đủ giải quyết. Các câu hỏi được ghi ngay tại mục 2.1 của báo cáo nhóm.
+* Trong mục 4.1, tôi chia việc lập checklist thành sáu bước từ mở repo đến rà lại trước khi làm bài. Ở mỗi bước, tôi ghi actor, đầu vào, đầu ra và điểm chuyển giao sang bước sau. Tôi chỉ ra bước đối chiếu yêu cầu giữa `SUBMISSION.md`, `RUBRIC.md` và `RULES.md` là bottleneck cần kiểm chứng; hậu quả đáng quan tâm là bỏ sót hoặc gán sai yêu cầu.
+* Trong mục 4.2–4.3, tôi phác thảo quy trình năm bước để nhóm so sánh: người dùng chọn nguồn, Rule tìm đoạn liên quan, AI tạo checklist nháp có dẫn nguồn, sinh viên đối chiếu rồi tự lưu và thực hiện bài. Tôi viết rõ điểm người dùng phải duyệt, cách xử lý tài liệu mâu thuẫn và cách quay về tìm kiếm, lập checklist thủ công khi bản nháp không đáng tin. Bảng before/after đối chiếu số bước, thời gian dự kiến, phần việc thủ công và rủi ro phát sinh.
+* Trong mục 5, tôi viết Problem Statement v0 với actor, quy trình, bottleneck, impact, success metric và boundary. Tôi đề xuất đo cả thời gian lập checklist lẫn số mục bắt buộc bị thiếu hoặc dẫn sai nguồn, để nhóm không đánh giá giải pháp chỉ qua tốc độ. Tôi rà lại nội dung này trước khi nhóm chốt bản cuối.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-* `report/team/group_report.md`, mục 2.1 và 4–5; báo cáo cá nhân `report/individual/2A202604113_PhamTranQuoc.md`. Số liệu phút trong CP5 là ước lượng, chưa phải log đo thực tế.
+* `report/team/group_report.md`: mục 2.1 lưu bốn câu hỏi phản biện; mục 4.1–4.3 lưu sơ đồ quy trình, bảng bước và so sánh before/after; mục 5 lưu Problem Statement v0 và phần phản biện metric. Phần việc cá nhân được trình bày thêm tại `report/individual/2A202604113_PhamTranQuoc.md`.
+* Các mốc khoảng 20 phút hiện tại và 12 phút kỳ vọng trong CP5 là ước lượng dùng để thiết kế phép so sánh, chưa phải log đo thực tế. Báo cáo nêu cách đo trên cùng bộ file và cách kiểm mục thiếu/sai nguồn trước khi kết luận hiệu quả.
 
 **Điều mình học được từ phần nhóm:**
 
-* Việc một repo có nhiều file hướng dẫn chỉ xác nhận nguồn thông tin phân tán; cần người dùng ngoài nhóm để biết bước đối chiếu có thật là nghẽn. Checklist phải có nguồn và người học kiểm trước khi dùng.
+* Tôi nhận ra việc thông tin nằm rải rác trong repo mới chỉ cho thấy người học phải đọc nhiều nguồn; nó chưa chứng minh bước đối chiếu là bước tốn thời gian nhất. Nhóm cần quan sát cách sinh viên ngoài nhóm làm bài và so sánh với cách tìm kiếm, checklist sẵn có trước khi quyết định có cần AI.
+* Khi ghép `SUBMISSION.md` với rubric và rules, một mục nộp bài có thể đi kèm điều kiện hoặc ngoại lệ ở file khác. Vì vậy checklist cần ghi nguồn cụ thể cho từng mục, và sinh viên phải kiểm bản gốc trước khi dùng. Một bản nháp tạo nhanh nhưng thiếu yêu cầu bắt buộc vẫn làm hỏng mục tiêu của quy trình.
+* Việc phân rõ Rule, AI và người duyệt giúp tôi thấy ranh giới của từng bước: Rule tìm nguồn, AI hỗ trợ diễn giải, còn người học quyết định checklist cuối cùng. Bảng before/after cũng buộc nhóm tính đến lỗi mới do giải pháp tạo ra, thay vì chỉ nhìn thời gian tiết kiệm dự kiến.
 
 ### NguyenAnhTu-2A202604088
 
