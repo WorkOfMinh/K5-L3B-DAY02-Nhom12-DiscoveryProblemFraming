@@ -60,21 +60,22 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 * Nhận diện và gạt bỏ tư duy "solution-first": không vội vàng tìm kiếm công cụ AI khi chưa hiểu rõ điểm nghẽn thực sự trong quy trình của người dùng.
 * Học cách chấp nhận phản biện khách quan, từ bỏ thiên vị ý tưởng cá nhân để cùng nhóm chọn bài toán khả thi và tạo ra giá trị thiết thực nhất.
 
-### HoVaTen-MSSV
+### PhamTranQuoc-2A202604113
 
 **Phần việc phụ trách:**
 
-* 
+* Phụ trách CP5: mô tả quy trình hiện tại và kịch bản tương lai cho candidate nhóm chọn; viết bảng before/after và Problem Statement v0.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-* 
+* Phụ trách nội dung mục 4–5 trong `report/team/group_report.md`: xác định actor, input/output, handoff và bước nghẽn của quy trình hiện tại.
+* Xây dựng quy trình đề xuất, phân rõ phần Rule, AI và người duyệt; bổ sung boundary, phương án quay về, bảng before/after và metric cho Problem Statement v0. Tôi chịu trách nhiệm rà soát nội dung trước khi nhóm chốt bản cuối.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-* 
+* `report/team/group_report.md`, mục 4–5; báo cáo cá nhân `report/individual/2A202604113_PhamTranQuoc.md`. Số liệu phút trong CP5 là ước lượng, chưa phải log đo thực tế.
 
 **Điều mình học được từ phần nhóm:**
 
-* 
+* Việc một repo có nhiều file hướng dẫn chỉ xác nhận nguồn thông tin phân tán; cần người dùng ngoài nhóm để biết bước đối chiếu có thật là nghẽn. Checklist phải có nguồn và người học kiểm trước khi dùng.
 

@@ -215,39 +215,58 @@ Nghiên cứu ba hướng hỗ trợ **có thật**, so sánh với thao tác th
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
+**Phạm vi:** Một sinh viên nhận repository lab có `README.md`, `CHECKPOINTS.md`, `RUBRIC.md`, `SUBMISSION.md`; đầu ra là checklist cá nhân trước khi bắt đầu làm bài. Các phút dưới đây là **ước lượng để vẽ quy trình**. Không tính thời gian thực hiện bài lab.
 
 ```text
-
+[1 Mở repo, xác định các file hướng dẫn: 2']
+→ [2 Đọc README và checkpoint: 3']
+→ [3 Tìm đầu ra bắt buộc, deadline trong submission: 4']
+→ [4 Đối chiếu từng đầu ra với rubric/rules: 6'] ← BOTTLENECK GIẢ ĐỊNH
+→ [5 Ghi checklist kèm file nguồn: 3']
+→ [6 Rà lại trước khi làm bài: 2']
+Tổng: khoảng 20 phút/lần (ước lượng, chưa đo).
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Sinh viên | Link repo lab | Danh sách file cần đọc | ~2 phút/lần nhận bài | Các file nằm trong cùng repo nhưng có chức năng khác nhau |
+| 2 | Sinh viên | `README.md`, `CHECKPOINTS.md` | Danh sách checkpoint và thứ tự làm | ~3 phút/lần | Handoff: đưa các mục cần làm sang bước đối chiếu |
+| 3 | Sinh viên | `SUBMISSION.md` | Danh sách file nộp, nơi nộp, hạn nộp | ~4 phút/lần | Cần phân biệt sản phẩm cá nhân và nhóm |
+| 4 | Sinh viên | Danh sách bước 2–3, `RUBRIC.md`, `RULES.md` | Yêu cầu bắt buộc ghép với tiêu chí và giới hạn dùng AI | ~6 phút/lần | Nhiều nguồn, cách diễn đạt khác nhau; bottleneck giả định |
+| 5 | Sinh viên | Các yêu cầu đã đối chiếu | Checklist có tên file/đường dẫn nguồn | ~3 phút/lần | Handoff: checklist dùng trong lúc làm bài |
+| 6 | Sinh viên | Checklist và file gốc | Danh sách đã rà lại | ~2 phút/lần | Người làm bài chịu trách nhiệm xác nhận |
 
-**Bottleneck chính:**
+**Bottleneck chính (giả thuyết cần kiểm ở CP4):** Bước 4, đối chiếu một yêu cầu với tiêu chí ở file khác và phân biệt mục bắt buộc với ví dụ/hướng dẫn. Ước lượng ~6 phút; hậu quả đáng chú ý hơn số phút là **bỏ sót hoặc gán sai yêu cầu**. Desk review CP4 xác nhận thông tin nằm ở nhiều file, chưa xác nhận bước 4 thật sự tốn nhất với người ngoài nhóm.
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
+Đây là **kịch bản thử nghiệm**, chưa chốt mức can thiệp ở CP6. Chỉ dùng các tài liệu mà sinh viên có quyền truy cập. Checklist sinh ra phải gắn nguồn để người dùng kiểm lại.
 
 ```text
+[1 Người dùng chọn repo/bộ file được phép đọc: ~1']        ← CON NGƯỜI
+→ [2 Liệt kê file, tìm mục tiêu đề/keyword: ~1']           ← RULE/script
+→ [3 Trích yêu cầu thành checklist nháp có nguồn: ~3']     ← AI hỗ trợ
+→ [4 Đối chiếu từng mục với file gốc, sửa/bổ sung: ~5']   ← CON NGƯỜI; điểm kiểm soát
+→ [5 Lưu checklist đã duyệt và tự thực hiện bài: ~2']     ← CON NGƯỜI
+Tổng phần lập checklist: khoảng 12 phút/lần (kỳ vọng để thử, chưa đo).
 
+BOUNDARY: AI không tự đánh dấu bài đã đạt rubric, không tự nộp bài,
+không suy ra deadline/điểm khi tài liệu không nói rõ, không đọc nguồn ngoài quyền truy cập.
+PHƯƠNG ÁN QUAY VỀ: thiếu nguồn, trích xuất sai hoặc công cụ ngừng hoạt động
+→ bỏ checklist nháp; dùng tìm kiếm GitHub/VS Code và checklist thủ công, đối chiếu file gốc.
 ```
+
+**Handoff và kiểm tra:** Rule chuyển danh sách file cho bước trích xuất; AI trả checklist nháp gồm nội dung, loại yêu cầu và đường dẫn file/đoạn nguồn; sinh viên mở nguồn, xác nhận từng mục rồi mới sử dụng. Nếu hai file mâu thuẫn, người dùng đánh dấu “cần hỏi coach”, không để AI tự chọn quy định.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 6 | 5 | Chỉ tính bước lập checklist |
+| Tổng thời gian | ~20 phút/lần | ~12 phút/lần | Cả hai là giả định thử nghiệm; cần đo trên cùng bộ tài liệu |
+| Số bước thủ công | 6/6 | 3/5 | Bước chọn nguồn, duyệt, lưu vẫn do người làm |
+| Bottleneck chính | Đối chiếu yêu cầu với rubric/rules | Kiểm nguồn và sửa checklist nháp | Giữ bước kiểm vì bỏ sót yêu cầu có thể gây trừ điểm |
+| Rủi ro mới phát sinh | Bỏ sót khi đọc thủ công | AI bỏ sót, hiểu sai ngoại lệ hoặc dẫn sai nguồn | Người dùng đối chiếu file gốc; quay về quy trình thủ công khi nháp không đáng tin |
 
 ---
 
@@ -255,16 +274,17 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Sinh viên nhận bài lab có nhiều file hướng dẫn trong một repository GitHub |
+| **Quy trình** | Mở repo → đọc hướng dẫn/checkpoint → tìm yêu cầu nộp → đối chiếu rubric/rules → lập checklist có nguồn → rà lại trước khi làm bài |
+| **Bottleneck** | Đối chiếu một yêu cầu giữa nhiều file và xác định mục nào thật sự bắt buộc; bước 4 được giả định là nghẽn, cần kiểm bằng hành vi người dùng ngoài nhóm |
+| **Impact** | Tốn công rà soát; có nguy cơ lập checklist thiếu mục, hiểu sai tiêu chí hoặc nộp thiếu file. Repo mẫu chỉ chứng minh thông tin phân tán, chưa chứng minh tần suất lỗi |
+| **Success Metric** (baseline → target, cách đo) | **Baseline tạm tính:** ~20 phút/lần lập checklist trên bộ tài liệu mẫu, chưa đo; số mục bỏ sót/gán sai nguồn chưa có baseline. **Target pilot đề xuất:** ≤12 phút và không bỏ sót mục bắt buộc, mỗi mục có đúng nguồn. **Cách đo:** cùng bộ file, người tham gia ngoài nhóm lập checklist bằng cách hiện tại và cách thử; ghi thời gian từ lúc mở repo đến lúc checklist được duyệt; đối chiếu với danh mục chuẩn do nhóm rà từ file gốc, đếm mục thiếu/sai nguồn. Chỉ chốt target sau CP4 và thử pilot |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | Người dùng chỉ cấp file có quyền truy cập. Mọi checklist nháp cần dẫn về file gốc; sinh viên kiểm từng mục trước khi dùng. AI không tự nộp, không xác nhận bài đạt rubric và không tự quyết khi tài liệu mâu thuẫn |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+- **AI phản biện bản nháp CP5:** “Giảm thời gian mà bỏ sót yêu cầu thì không giải được problem; baseline 20 phút cũng chưa được đo.” **Hướng chỉnh trong bản nháp:** bổ sung số mục bắt buộc bị bỏ sót/gán sai nguồn và cách lập danh mục chuẩn, đồng thời gắn nhãn các phút là giả định. Nhóm cần tự xem và xác nhận lập luận trước khi chốt.
+- **Cần nhóm xác nhận sau CP4:** Nếu người ngoài nhóm nói tìm kiếm có sẵn đã đủ hoặc bottleneck nằm ở hiểu chuyên môn thay vì đối chiếu file, sửa lại actor/bottleneck và cân nhắc No AI/Rule ở CP6.
 
 ---
 

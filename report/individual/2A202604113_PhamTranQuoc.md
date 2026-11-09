@@ -110,15 +110,15 @@ Tổng baseline ước tính: 30 phút/lần.
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-**Chưa có hoạt động nhóm được ghi nhận trong `TEAM.md` và `group_report.md`.** Sau buổi nhóm, tôi tự điền câu hỏi đã đặt, câu hỏi nhận được, candidate được chọn, thay đổi sau phản biện và bằng chứng đóng góp. Không ghi tình huống dự đoán thành việc đã diễn ra.
+Nhóm đã chọn bài toán **đối chiếu yêu cầu và tiêu chí từ nhiều file trong repository lab**. Theo phân công trong `TEAM.md`, tôi phụ trách CP5. Phần CP3 hỏi và nhận phản biện trực tiếp, phỏng vấn CP4 và reflection CP7 cần ghi theo hoạt động thật của tôi; hiện chưa có bằng chứng cá nhân để khẳng định đã thực hiện các việc đó.
 
 | Hoạt động | Điều tôi phải ghi sau khi thực hiện | Bằng chứng |
 |---|---|---|
-| Pitch và phản biện | Card đã pitch; câu hỏi nguyên văn mình đặt cho người khác và nhận từ họ; mình đã sửa gì | Bảng pitch CP3 |
-| Chọn candidate | Lý do chọn và lý do loại ít nhất hai ý | OST, bảng chấm điểm |
-| Kiểm chứng | Vai trò người được hỏi, thời điểm, hành vi họ kể, tín hiệu phản bác | Snapshot/survey CP4 |
-| Quy trình, Problem Statement | Bước tôi sửa, metric/boundary tôi góp ý | Mục 4–7 báo cáo nhóm |
-| Quyết định | Lập luận của tôi về Augment/Automate, No AI/Rule/Workflow/Agent và bốn rủi ro | Mục 6–8 báo cáo nhóm, TEAM.md |
+| Pitch và phản biện | Ba card đời sống của tôi có trong bảng pitch; câu hỏi tôi trực tiếp đặt cho người khác và câu trả lời nhận được cần tự bổ sung theo buổi nhóm | Báo cáo nhóm mục 2.1 |
+| Chọn candidate | Nhóm chọn bài toán đối chiếu yêu cầu lab, không chọn ba card của tôi; lý do chọn/loại nằm trong OST và bảng chấm điểm | Báo cáo nhóm mục 2.3–2.4 |
+| Kiểm chứng | Chưa có dữ liệu phỏng vấn/survey người ngoài nhóm; không ghi giả định thành phát hiện | Báo cáo nhóm mục 3.2 |
+| Quy trình, Problem Statement | Tôi phụ trách CP5: dựng quy trình hiện tại và đề xuất, chỉ ra bước nghẽn, lập bảng before/after và viết Problem Statement v0. Tôi giữ số phút ở mức ước lượng và yêu cầu người học kiểm nguồn trước khi dùng checklist | Báo cáo nhóm mục 4–5; `TEAM.md` |
+| Quyết định | CP6 do thành viên khác phụ trách chính; tôi sẽ phản biện khi nhóm có dữ liệu CP4 và bản CP6 | Báo cáo nhóm mục 6–8 khi hoàn tất |
 
 ## 5. Dùng AI
 
@@ -127,7 +127,7 @@ Tổng baseline ước tính: 30 phút/lần.
 | CP1 | Gợi ý candidate đời sống và hỗ trợ diễn đạt theo Job Story | Giúp mở rộng danh sách, làm rõ actor, việc cần làm và kết quả | Gợi ý không chứng minh người thật gặp pain; thời gian/tần suất không có nguồn xác nhận | Ghi rõ các candidate và con số là giả định/ước lượng, không mô tả thành trải nghiệm đã kiểm chứng |
 | CP2 | Phản biện ba card và chỉ ra thông tin còn thiếu | Nhắc nêu từng bước, bottleneck, metric và phương án Rule/checklist | Chưa thể xác nhận bottleneck hay target chỉ từ mô tả; không nên mặc định cần Agent | Đổi cách ghi từ kết luận sang giả thuyết; giữ baseline dạng tham khảo và để nhóm xác định target sau kiểm chứng |
 | CP3 và CP4 phỏng vấn | Không dùng AI | — | — | Tự pitch, tự phản biện và hỏi người thật |
-| CP4 research, CP5–CP6 | Chưa thực hiện | — | — | Nếu dùng AI, ghi prompt, tự kiểm link và ghi sửa đổi thực tế |
+| CP5 | Tôi phụ trách phân tích quy trình và Problem Statement v0; dùng AI để rà lại lập luận và tìm chỗ còn thiếu | Gợi ý tách rõ đầu vào, đầu ra, bước bàn giao và người kiểm checklist | AI dễ xem thời gian ước lượng như số đã đo, hoặc đánh giá quá sớm rằng Workflow sẽ hiệu quả | Tôi giữ thời gian là mốc tham khảo, bổ sung cách đếm yêu cầu bị bỏ sót/sai nguồn và phương án quay về quy trình thủ công |
 
 ## 6. Reflection (CP7)
 
