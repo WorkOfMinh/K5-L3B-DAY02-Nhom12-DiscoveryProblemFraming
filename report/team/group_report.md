@@ -8,7 +8,7 @@
 * Tên nhóm: Nhóm 12 (K5-L3B)
 * Thành viên: xem `TEAM.md`
 * Candidate problem được chọn (1 câu): Khi nhận bài lab/đồ án/task có yêu cầu và tiêu chí chấm rải rác ở nhiều file hoặc kênh, sinh viên muốn biết đủ đầu ra bắt buộc, tiêu chí và hạn nộp mà không phải đối chiếu thủ công.
-* Quyết định cuối: Go / Not Yet / No-Go
+* Quyết định cuối: Go 
 
 \---
 
