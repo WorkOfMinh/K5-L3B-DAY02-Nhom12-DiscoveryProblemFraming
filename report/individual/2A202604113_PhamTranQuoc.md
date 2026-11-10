@@ -23,6 +23,20 @@ Tôi chọn các tình huống có nhiều bước, nhiều nguồn thông tin h
 
 Năm vấn đề này không cùng một kiểu khó khăn. Lập bữa ăn và theo dõi hóa đơn là việc lặp lại; sắp nhiều điểm đến và chuyến đi ngắn cần ghép lịch, địa điểm, ngân sách; sửa đồ trong nhà còn có bước phối hợp với người khác. Tôi không xếp hạng bằng số phút ước lượng, vì một việc chỉ mất ít phút vẫn có thể gây hậu quả lớn nếu bỏ sót hạn thanh toán hoặc lỡ giờ hẹn. Khi chọn tiếp, tôi nhìn vào người chịu ảnh hưởng, bước nghẽn có thể chỉ ra được, hậu quả và khả năng kiểm chứng trong phạm vi bài lab.
 
+### Cách tôi đọc lại năm vấn đề trước khi chọn card
+
+| Vấn đề | Đầu vào cần đối chiếu | Quyết định cuối cùng thuộc về ai? | Cách xử lý đơn giản cần so sánh |
+|---|---|---|---|
+| Bữa ăn và mua sắm | Đồ còn, khẩu vị, giá và số bữa cần chuẩn bị | Người nấu ăn, người cùng nhà | Thực đơn luân phiên và danh sách mua hàng |
+| Hóa đơn sinh hoạt | Thông báo, hạn trả, số tiền, lịch sử thanh toán | Người quản lý chi tiêu | Lịch nhắc và bảng đánh dấu đã thanh toán |
+| Nhiều điểm đến | Giờ mở cửa, đường đi và thời hạn từng việc | Người đi thực hiện công việc | Bản đồ nhiều điểm dừng và lịch cá nhân |
+| Sửa thiết bị | Mô tả hỏng, báo giá, lịch của thợ và người ở nhà | Người sở hữu thiết bị | Danh sách nơi sửa và mẫu câu hỏi báo giá |
+| Chuyến đi ngắn | Lịch rảnh, ngân sách, tuyến đường, giờ hoạt động | Những người cùng tham gia | Bảng chọn ngày và lịch trình chia sẻ |
+
+Bảng này giúp tôi phân biệt bước có thể chuẩn hóa với bước cần lựa chọn của con người. Chẳng hạn, nhắc hạn thanh toán có thể viết thành Rule, nhưng xác nhận đúng số tiền và thực hiện giao dịch vẫn cần người quản lý chi tiêu. Tương tự, gợi ý thực đơn chỉ có ích nếu nguyên liệu còn trong nhà được cập nhật đủ đúng; nếu không, một danh sách cố định có thể đáng tin hơn.
+
+Với các con số chưa đo, tôi ghi rõ cách kiểm thay vì dùng chúng làm bằng chứng. Khi có dịp quan sát, tôi cần ghi thời điểm bắt đầu và kết thúc, số nguồn phải mở lại, mục nào bị bỏ sót và người chịu hậu quả. Các dấu hiệu này sẽ giúp quyết định có nên tiếp tục một card hay loại nó ở bước hội tụ.
+
 ## 3. Top 3 Problem Cards + quy trình nháp (CP2)
 
 **Shortlist dự kiến:** #1 lập bữa ăn và mua sắm, #2 theo dõi hóa đơn, #3 sắp lịch nhiều điểm đến. Ba candidate có actor, đầu vào, kết quả và quy trình đủ rõ để mang ra pitch. Phút ở các quy trình là ước lượng minh họa nhằm làm rõ bước nào có thể là bottleneck; không phải số đo, cam kết hiệu quả hay ngưỡng chấm. Các mốc này có thể thay đổi hoặc bỏ nếu CP4 cho thấy giả định không đúng.
@@ -34,6 +48,16 @@ Năm vấn đề này không cùng một kiểu khó khăn. Lập bữa ăn và 
 | 3 | Sắp thứ tự nhiều điểm đến (#3) | Giờ mở cửa, thời gian di chuyển và việc phát sinh có thể thay đổi | Tần suất xảy ra có đủ cao để đáng giải không? |
 
 Tôi chưa đưa việc sửa thiết bị (#4) vào top 3 vì nó có thể xảy ra không thường xuyên và cần thêm thông tin từ người thật về số lần phải hỏi lại hoặc hẹn lại. Chuyến đi ngắn (#5) có nhiều ràng buộc nhưng việc chốt lịch còn phụ thuộc sở thích và sự đồng thuận của cả nhóm, nên khó quy một bước làm nghẽn cho mọi trường hợp. Ba card được chọn cũng chưa chứng minh cần AI: mỗi card đều có cách xử lý bằng checklist, lịch nhắc, bản đồ hoặc Rule để so sánh trước.
+
+### Cách kiểm ba giả thuyết nếu tiếp tục nghiên cứu
+
+| Card | Câu cần làm rõ ở lần xảy ra gần nhất | Quan sát cần ghi | Điều có thể làm tôi đổi hướng |
+|---|---|---|---|
+| #1 Bữa ăn | Lúc chọn món, việc nào khiến người nấu phải dừng hoặc hỏi lại? | Đồ còn, số lần đổi món, thời gian ở từng bước, món mua thừa | Thực đơn cố định đã giúp mua đủ và không còn mất công chọn món |
+| #2 Hóa đơn | Khoản nào phải đối chiếu lại, vì thông báo thiếu gì? | Số nguồn thông báo, số lần kiểm lịch sử, khoản đã trả nhưng vẫn được nhắc | Một lịch nhắc và bảng đánh dấu đã trả giải quyết được phần lớn vấn đề |
+| #3 Đi nhiều nơi | Lịch thay đổi ở bước nào và vì sao phải xếp lại thứ tự? | Giờ mở cửa, thời gian đi thực tế, số lần quay lại hoặc lỡ hẹn | Việc này hiếm xảy ra hoặc bản đồ nhiều điểm dừng đã đủ dùng |
+
+Tôi sẽ hỏi về một lần đã diễn ra và xem người dùng thực sự làm gì. Một câu trả lời kiểu “tôi nghĩ ứng dụng AI sẽ tiện” chưa cho biết bước nào đang nghẽn. Nếu người dùng đã có cách làm tốt bằng công cụ sẵn có, card đó vẫn có thể là một pain nhỏ, nhưng không nhất thiết cần xây thêm giải pháp trong lab.
 
 ### Problem Card #1 — Lập bữa ăn và mua sắm
 
@@ -143,6 +167,22 @@ Các câu hỏi này gắn với bốn card trong bảng pitch CP3. Câu hỏi n
 | Giữ người học ở bước kiểm cuối | Tài liệu có thể có ngoại lệ hoặc hai chỗ diễn đạt khác nhau; AI không nên tự kết luận bài đã đạt hay tự nộp | Quy trình tương lai, Boundary và phương án quay về tìm kiếm/checklist thủ công |
 
 Các bước hiện tại cộng lại thành khoảng 20 phút và quy trình đề xuất khoảng 12 phút, nhưng đây là hai mốc để thiết kế phép so sánh. Tôi không dùng chênh lệch 8 phút làm kết quả cải thiện khi nhóm chưa chạy thử trên người dùng. Với candidate của nhóm, chất lượng đầu ra cần được kiểm bằng danh mục yêu cầu lấy từ file gốc, còn thời gian chỉ có ý nghĩa nếu checklist vẫn đủ và đúng nguồn.
+
+### Diễn giải phần việc CP5 theo đầu vào và đầu ra
+
+| Điểm chuyển giao | Đầu vào | Đầu ra cần kiểm | Ai chịu trách nhiệm |
+|---|---|---|---|
+| Nhận bài → đọc tài liệu | Link repo và phiên bản tài liệu đang dùng | Danh sách file hướng dẫn có liên quan | Sinh viên |
+| Đọc tài liệu → đối chiếu | README, checkpoint, hướng dẫn nộp | Danh sách đầu việc, file phải nộp, hạn và điều kiện | Sinh viên |
+| Đối chiếu → lập checklist | Danh sách trên cùng rubric và rules | Mỗi mục có yêu cầu, điều kiện áp dụng và nguồn gốc | Sinh viên |
+| Rule → AI trong kịch bản thử | Tập file và các đoạn Rule tìm được | Checklist nháp; mục nào thiếu nguồn phải được đánh dấu | Công cụ tạo nháp |
+| AI → người duyệt | Checklist nháp và đường dẫn về file gốc | Checklist đã kiểm, đã sửa hoặc bị bác bỏ | Sinh viên |
+
+Tôi tách bước “tìm thấy đoạn văn” khỏi bước “hiểu đoạn đó là yêu cầu gì”. Một kết quả tìm kiếm có thể trỏ đúng từ khóa nhưng vẫn chỉ là ví dụ, hoặc bỏ qua một ngoại lệ ở file khác. Vì vậy, đầu ra có dẫn nguồn là điều kiện để kiểm, chưa phải bằng chứng rằng checklist đã đúng.
+
+Trong kịch bản thử, một mục chỉ được giữ khi người học mở được file gốc và xác nhận cách diễn giải. Nếu hai tài liệu có vẻ mâu thuẫn, checklist cần ghi chỗ chưa rõ để hỏi coach hoặc người ra đề. Nếu công cụ không tìm được nguồn hoặc tạo nhiều mục sai, người học quay lại tìm kiếm và ghi checklist thủ công; việc nộp bài vẫn do người học thực hiện.
+
+Tôi đề xuất so sánh các cách làm trên cùng một repository và cùng danh mục chuẩn. Bên cạnh thời gian hoàn tất, cần đếm mục bắt buộc bị thiếu, mục gắn nhầm điều kiện và nguồn dẫn sai. Chỉ khi chất lượng không giảm, chênh lệch thời gian mới có ý nghĩa để nhóm cân nhắc Workflow ở CP6.
 
 ## 5. Dùng AI
 
